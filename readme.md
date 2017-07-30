@@ -33,11 +33,11 @@ Once you sign in, you will be redirected to a page like `npf71b963c1b7b6d119://a
 
 2. Get a session token
 
-Extract the session_state and state from that url, and request from [POST /connect/1.0.0/api/session_token](NintendoAccount.md#GetSessionToken)
+Extract the session_state and state from that url, and request from [POST /connect/1.0.0/api/session_token](NintendoAccountBlueprint.md#GetSessionToken)
 
 3. Get a service access token
 
-Make a request to [POST /connect/1.0.0/api/token](NintendoAccount.md#GetServiceToken) using `session_token` from 2.
+Make a request to [POST /connect/1.0.0/api/token](NintendoAccountBlueprint.md#GetServiceToken) using `session_token` from 2.
 
 4. Login to account
 
