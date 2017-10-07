@@ -11,14 +11,14 @@ Note: I recommend setting the `User-Agent` on all requests to the Splatoon 2 API
 * Results
 	* [Results [GET /api/results]](#GetResults)
 	* [Individual Result [GET /api/results/{battle_number}]](#GetIndividualResult)
-	* [Salmon Run [GET /api/records/hero]](#GetSalmonRunData)
+	* [Single Player [GET /api/records/hero]](#GetSinglePlayerData)
 * Misc
 	* [Schedules [GET /api/schedules]](#GetSchedule)
 	* [Stages [GET /api/data/stages]](#GetStages)
 	* [Timeline [GET /api/timeline]](#GetTimeline)
 	* [Nickname and icon [GET /api/nickname_and_icon{?id}]](#GetNicknameIcon)
 * Festivals
-	* [Active Festivals [GET /api/festival/active]](#GetActiveFestivals)
+	* [Active Festivals [GET /api/festivals/active]](#GetActiveFestivals)
 	* [Individual Festival [GET /api/festivals/{festival_id}/votes]](#GetFestivalVotes)
 * Merchandise
 	* [Merchandise List [GET /api/onlineshop/merchandises]](#GetMerchandiseList)
@@ -1719,7 +1719,7 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 
 ## Hero [/api/records/hero]
 
-### <a name="GetSalmonRunData"></a> Get Salmon Run data [GET]
+### <a name="GetSinglePlayerData"></a> Get Single Player Data [GET]
 
 + Request
 
@@ -3866,7 +3866,7 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 
 # Group Festivals
 
-## Active Festivals [/api/festival/active]
+## Active Festivals [/api/festivals/active]
 
 ### <a name="GetActiveFestivals"></a> Get Active Festivals [GET]
 
