@@ -63,7 +63,8 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 
 + Response 200 (application/json)
 	+ Body
-
+        
+        ```json
 		{
 		  "results": [
 		    {
@@ -435,6 +436,7 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 		    "death_count_average": 4.26
 		  }
 		}
+		```
 
 ## Individual Result [/api/results/{battle_number}]
 
@@ -452,7 +454,8 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 + Response 200 (application/json)
 	
 	+ Body
-
+        
+        ```json
 		{
 		  "other_team_members": [
 		    {
@@ -1717,6 +1720,7 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 		  "weapon_paint_point": 7473,
 		  "my_team_count": 100
 		}
+		```
 
 
 ## Hero [/api/records/hero]
@@ -1733,24 +1737,556 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 
 	+ Body
 
+        ```json
 		{
-		  "stage_infos": [
-		    
-		  ],
-		  "summary": {
-		    "clear_rate": 0,
-		    "weapon_cleared_info": {
-		      
-		    },
-		    "honor": {
-		      "name": "Squidbeak Recruit",
-		      "code": "title0"
-		    }
-		  },
-		  "weapon_map": {
-		    
-		  }
-		}
+          "summary": {
+            "weapon_cleared_info": {
+              "0": false,
+              "1": false,
+              "2": false,
+              "3": false,
+              "4": false,
+              "5": false,
+              "6": false,
+              "7": false,
+              "8": false
+            },
+            "clear_rate": 1.25,
+            "honor": {
+              "code": "title1",
+              "name": "Catfish Collector"
+            }
+          },
+          "stage_infos": [
+            {
+              "clear_weapons": {
+                "0": {
+                  "weapon_category": "0",
+                  "weapon_level": 1,
+                  "clear_time": 297
+                }
+              },
+              "stage": {
+                "is_boss": false,
+                "id": "1",
+                "area": "1"
+              }
+            },
+            {
+              "clear_weapons": {
+                "0": {
+                  "weapon_level": 1,
+                  "weapon_category": "0",
+                  "clear_time": 401
+                }
+              },
+              "stage": {
+                "id": "2",
+                "is_boss": false,
+                "area": "1"
+              }
+            },
+            {
+              "clear_weapons": {
+                "0": {
+                  "weapon_category": "0",
+                  "weapon_level": 1,
+                  "clear_time": 217
+                }
+              },
+              "stage": {
+                "is_boss": false,
+                "id": "3",
+                "area": "1"
+              }
+            },
+            {
+              "clear_weapons": {
+                "0": {
+                  "clear_time": 134,
+                  "weapon_category": "0",
+                  "weapon_level": 1
+                }
+              },
+              "stage": {
+                "area": "1",
+                "is_boss": true,
+                "id": "101"
+              }
+            },
+            {
+              "stage": {
+                "is_boss": false,
+                "id": "4",
+                "area": "2"
+              },
+              "clear_weapons": {
+                "1": {
+                  "weapon_category": "1",
+                  "weapon_level": 0,
+                  "clear_time": 298
+                }
+              }
+            },
+            {
+              "clear_weapons": {
+                "3": {
+                  "weapon_level": 1,
+                  "weapon_category": "3",
+                  "clear_time": 336
+                }
+              },
+              "stage": {
+                "area": "2",
+                "is_boss": false,
+                "id": "5"
+              }
+            },
+            {
+              "stage": {
+                "area": "2",
+                "is_boss": false,
+                "id": "6"
+              },
+              "clear_weapons": {
+                "2": {
+                  "clear_time": 282,
+                  "weapon_level": 0,
+                  "weapon_category": "2"
+                }
+              }
+            },
+            {
+              "clear_weapons": {
+                "0": {
+                  "clear_time": 406,
+                  "weapon_category": "0",
+                  "weapon_level": 1
+                }
+              },
+              "stage": {
+                "id": "7",
+                "is_boss": false,
+                "area": "2"
+              }
+            },
+            {
+              "stage": {
+                "area": "2",
+                "id": "8",
+                "is_boss": false
+              },
+              "clear_weapons": {
+                "0": {
+                  "clear_time": 238,
+                  "weapon_level": 1,
+                  "weapon_category": "0"
+                }
+              }
+            },
+            {
+              "clear_weapons": {
+                "0": {
+                  "weapon_category": "0",
+                  "weapon_level": 1,
+                  "clear_time": 321
+                }
+              },
+              "stage": {
+                "id": "9",
+                "is_boss": false,
+                "area": "2"
+              }
+            },
+            {
+              "clear_weapons": {
+                "1": {
+                  "clear_time": 328,
+                  "weapon_level": 0,
+                  "weapon_category": "1"
+                }
+              },
+              "stage": {
+                "is_boss": true,
+                "id": "102",
+                "area": "2"
+              }
+            },
+            {
+              "stage": {
+                "area": "3",
+                "id": "10",
+                "is_boss": false
+              },
+              "clear_weapons": {
+                "7": {
+                  "clear_time": 398,
+                  "weapon_level": 0,
+                  "weapon_category": "7"
+                }
+              }
+            },
+            {
+              "clear_weapons": {
+                "3": {
+                  "weapon_level": 1,
+                  "weapon_category": "3",
+                  "clear_time": 400
+                }
+              },
+              "stage": {
+                "id": "11",
+                "is_boss": false,
+                "area": "3"
+              }
+            },
+            {
+              "clear_weapons": {
+                "0": {
+                  "weapon_level": 1,
+                  "weapon_category": "0",
+                  "clear_time": 310
+                }
+              },
+              "stage": {
+                "area": "3",
+                "is_boss": false,
+                "id": "12"
+              }
+            },
+            {
+              "stage": {
+                "area": "3",
+                "is_boss": false,
+                "id": "13"
+              },
+              "clear_weapons": {
+                "5": {
+                  "clear_time": 471,
+                  "weapon_category": "5",
+                  "weapon_level": 0
+                }
+              }
+            },
+            {
+              "clear_weapons": {
+                "2": {
+                  "clear_time": 407,
+                  "weapon_level": 0,
+                  "weapon_category": "2"
+                }
+              },
+              "stage": {
+                "id": "14",
+                "is_boss": false,
+                "area": "3"
+              }
+            },
+            {
+              "clear_weapons": {
+                "5": {
+                  "clear_time": 345,
+                  "weapon_category": "5",
+                  "weapon_level": 0
+                }
+              },
+              "stage": {
+                "id": "15",
+                "is_boss": false,
+                "area": "3"
+              }
+            },
+            {
+              "stage": {
+                "is_boss": true,
+                "id": "103",
+                "area": "3"
+              },
+              "clear_weapons": {
+                "3": {
+                  "weapon_category": "3",
+                  "weapon_level": 1,
+                  "clear_time": 208
+                }
+              }
+            },
+            {
+              "clear_weapons": {
+                "0": {
+                  "clear_time": 354,
+                  "weapon_level": 1,
+                  "weapon_category": "0"
+                }
+              },
+              "stage": {
+                "area": "4",
+                "id": "16",
+                "is_boss": false
+              }
+            },
+            {
+              "clear_weapons": {
+                "7": {
+                  "weapon_category": "7",
+                  "weapon_level": 0,
+                  "clear_time": 242
+                }
+              },
+              "stage": {
+                "area": "4",
+                "is_boss": false,
+                "id": "17"
+              }
+            },
+            {
+              "stage": {
+                "area": "4",
+                "id": "18",
+                "is_boss": false
+              },
+              "clear_weapons": {
+                "2": {
+                  "weapon_level": 0,
+                  "weapon_category": "2",
+                  "clear_time": 405
+                }
+              }
+            },
+            {
+              "clear_weapons": {
+                "6": {
+                  "clear_time": 574,
+                  "weapon_category": "6",
+                  "weapon_level": 0
+                }
+              },
+              "stage": {
+                "area": "4",
+                "id": "19",
+                "is_boss": false
+              }
+            },
+            {
+              "clear_weapons": {
+                "4": {
+                  "clear_time": 717,
+                  "weapon_level": 0,
+                  "weapon_category": "4"
+                }
+              },
+              "stage": {
+                "is_boss": false,
+                "id": "20",
+                "area": "4"
+              }
+            },
+            {
+              "stage": {
+                "id": "21",
+                "is_boss": false,
+                "area": "4"
+              },
+              "clear_weapons": {
+                "2": {
+                  "weapon_category": "2",
+                  "weapon_level": 0,
+                  "clear_time": 327
+                }
+              }
+            },
+            {
+              "clear_weapons": {
+                "2": {
+                  "weapon_category": "2",
+                  "weapon_level": 0,
+                  "clear_time": 285
+                }
+              },
+              "stage": {
+                "area": "4",
+                "id": "104",
+                "is_boss": true
+              }
+            },
+            {
+              "clear_weapons": {
+                "8": {
+                  "clear_time": 1259,
+                  "weapon_category": "8",
+                  "weapon_level": 0
+                }
+              },
+              "stage": {
+                "area": "5",
+                "is_boss": false,
+                "id": "22"
+              }
+            },
+            {
+              "stage": {
+                "id": "23",
+                "is_boss": false,
+                "area": "5"
+              },
+              "clear_weapons": {
+                "3": {
+                  "clear_time": 242,
+                  "weapon_category": "3",
+                  "weapon_level": 1
+                }
+              }
+            },
+            {
+              "stage": {
+                "is_boss": false,
+                "id": "24",
+                "area": "5"
+              },
+              "clear_weapons": {
+                "7": {
+                  "clear_time": 498,
+                  "weapon_level": 0,
+                  "weapon_category": "7"
+                }
+              }
+            },
+            {
+              "stage": {
+                "id": "25",
+                "is_boss": false,
+                "area": "5"
+              },
+              "clear_weapons": {
+                "5": {
+                  "clear_time": 529,
+                  "weapon_level": 0,
+                  "weapon_category": "5"
+                }
+              }
+            },
+            {
+              "stage": {
+                "area": "5",
+                "id": "26",
+                "is_boss": false
+              },
+              "clear_weapons": {
+                "1": {
+                  "weapon_category": "1",
+                  "weapon_level": 0,
+                  "clear_time": 366
+                }
+              }
+            },
+            {
+              "clear_weapons": {
+                "3": {
+                  "weapon_level": 1,
+                  "weapon_category": "3",
+                  "clear_time": 310
+                }
+              },
+              "stage": {
+                "area": "5",
+                "is_boss": false,
+                "id": "27"
+              }
+            },
+            {
+              "stage": {
+                "id": "105",
+                "is_boss": true,
+                "area": "5"
+              },
+              "clear_weapons": {
+                "0": {
+                  "weapon_category": "0",
+                  "weapon_level": 1,
+                  "clear_time": 694
+                },
+                "1": {
+                  "weapon_level": 0,
+                  "weapon_category": "1",
+                  "clear_time": 489
+                },
+                "2": {
+                  "clear_time": 570,
+                  "weapon_category": "2",
+                  "weapon_level": 0
+                },
+                "3": {
+                  "clear_time": 501,
+                  "weapon_category": "3",
+                  "weapon_level": 1
+                },
+                "4": {
+                  "clear_time": 356,
+                  "weapon_level": 0,
+                  "weapon_category": "4"
+                },
+                "5": {
+                  "weapon_category": "5",
+                  "weapon_level": 0,
+                  "clear_time": 836
+                },
+                "6": {
+                  "weapon_category": "6",
+                  "weapon_level": 0,
+                  "clear_time": 586
+                },
+                "7": {
+                  "clear_time": 375,
+                  "weapon_category": "7",
+                  "weapon_level": 0
+                },
+                "8": {
+                  "weapon_level": 0,
+                  "weapon_category": "8",
+                  "clear_time": 366
+                }
+              }
+            }
+          ],
+          "weapon_map": {
+            "0": {
+              "category": "0",
+              "image": "/images/weapon_shadow/065c599c0eed302f3cfd62918bc1878c555bb6bf.png"
+            },
+            "1": {
+              "image": "/images/weapon_shadow/2253c172838902be7452ff639b5647346eecae51.png",
+              "category": "1"
+            },
+            "2": {
+              "category": "2",
+              "image": "/images/weapon_shadow/711f6bb1e383408f458e82acc924f09cbc7d6eac.png"
+            },
+            "3": {
+              "image": "/images/weapon_shadow/bd8f778b51dd3234845e9f51404a75b7a40fc9a9.png",
+              "category": "3"
+            },
+            "4": {
+              "category": "4",
+              "image": "/images/weapon_shadow/388bd0addb531d1c31e6fa9dedd86ae4a2f375cd.png"
+            },
+            "5": {
+              "category": "5",
+              "image": "/images/weapon_shadow/1c1231e0cc8bd1c96807d450f3c443e1ba77a1cf.png"
+            },
+            "6": {
+              "category": "6",
+              "image": "/images/weapon_shadow/67a5fa4a766052745fcbd445c07f2d4469608838.png"
+            },
+            "7": {
+              "image": "/images/weapon_shadow/56a2e582d493614192a4af5d6a36df325495c1fd.png",
+              "category": "7"
+            },
+            "8": {
+              "category": "8",
+              "image": "/images/weapon_shadow/d0eccc7eb695dcad65d96f71958e61f45c0260d1.png"
+            }
+          }
+        }
+		```
 
 
 # Group Misc
@@ -1768,7 +2304,8 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 + Response 200 (application/json)
 
 	+ Body
-
+        
+        ```json
 		{
 		  "league": [
 		    {
@@ -2641,6 +3178,7 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 		    }
 		  ]
 		}
+		```
 
 ## Stages [/api/data/stages]
 
@@ -2655,7 +3193,8 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 + Response 200 (application/json)
 
 	+ Body
-
+        
+        ```json
 		{
 		  "stages": [
 		    {
@@ -2700,6 +3239,7 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 		    }
 		  ]
 		}
+		```
 
 
 ## Timeline [/api/timeline]
@@ -2716,1128 +3256,1128 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 
 	+ Body
 
+        ```json
 		{
-		  "challenge": {
-		    "next_challenge": {
-		      "paint_points": 121000,
-		      "key": "tenfold_squid_research_lab",
-		      "image": "\/images\/challenge\/bc823e738fddce2cfb96469da441a5e58099740e.png",
-		      "name": "Squid Research HQ x10"
-		    },
-		    "importance": 0.1,
-		    "total_paint_point": 106559,
-		    "last_archived_challenge": {
-		      "name": "Great Pyramid of Giza",
-		      "key": "great_pyramid_at_giza",
-		      "image": "\/images\/challenge\/2509440d7e6a290451640485abc91ec1b2c20bbc.png",
-		      "paint_points": 16000
-		    }
-		  },
-		  "weapon_availability": {
-		    "importance": 0.64706944444444,
-		    "availabilities": [
-		      {
-		        "weapon": {
-		          "sub": {
-		            "id": "8",
-		            "image_b": "\/images\/sub\/627ae0ea02ab649a7a482ee7ee7ace85ca307f44.png",
-		            "name": "Point Sensor",
-		            "image_a": "\/images\/sub\/14b4d4ef62e915e87bd7caa8b99fb4e986caea26.png"
-		          },
-		          "special": {
-		            "image_a": "\/images\/special\/e395a50d51459dcee4db62d8d1fbc4bb263bc326.png",
-		            "id": "0",
-		            "name": "Tenta Missiles",
-		            "image_b": "\/images\/special\/4819d9d318668bdd5dab248a23397ec351bc5c60.png"
-		          },
-		          "image": "\/images\/weapon\/aaead5ff0b63cdcb989b211d649b2552bb3e3a1b.png",
-		          "thumbnail": "\/images\/weapon\/3abcd1e1152e6d819bee363311edcf4737d14a45.png",
-		          "name": "Dualie Squelchers",
-		          "id": "5030"
-		        },
-		        "release_time": 1501293600
-		      }
-		    ]
-		  },
-		  "onlineshop": {
-		    "importance": 0.10622222222222,
-		    "merchandise": {
-		      "price": 7600,
-		      "skill": {
-		        "image": "\/images\/skill\/04b1de71fba1f14197b9163503955c52fd74858b.png",
-		        "id": "0",
-		        "name": "Ink Saver (Main)"
-		      },
-		      "gear": {
-		        "id": "6006",
-		        "rarity": 1,
-		        "thumbnail": "\/images\/shoes\/0585889cd0579eab915d05b769827408e4a7694b.png",
-		        "name": "Punk Whites",
-		        "brand": {
-		          "image": "\/images\/brand\/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
-		          "name": "Rockenberg",
-		          "frequent_skill": {
-		            "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
-		            "id": "3",
-		            "name": "Run Speed Up"
-		          },
-		          "id": "3"
-		        },
-		        "image": "\/images\/shoes\/7f725fb83d72e41297d15e70319bd7c51a5080c1.png",
-		        "kind": "shoes"
-		      },
-		      "kind": "shoes",
-		      "end_time": 1501401600,
-		      "id": "4780952683920163047"
-		    }
-		  },
-		  "udemae": {
-		    "change": 1,
-		    "importance": 0,
-		    "stat": {
-		      "rule": {
-		        "key": "splat_zones",
-		        "name": "Splat Zones",
-		        "multiline_name": "Splat\nZones"
-		      },
-		      "battle_number": "112",
-		      "my_team_result": {
-		        "name": "VICTORY",
-		        "key": "victory"
-		      },
-		      "estimate_gachi_power": 1770,
-		      "other_team_result": {
-		        "name": "DEFEAT",
-		        "key": "defeat"
-		      },
-		      "my_team_count": 100,
-		      "player_result": {
-		        "assist_count": 0,
-		        "game_paint_point": 535,
-		        "sort_score": -2,
-		        "death_count": 3,
-		        "player": {
-		          "head": {
-		            "rarity": 1,
-		            "id": "1019",
-		            "name": "King Flip Mesh",
-		            "thumbnail": "\/images\/head\/3de76b009f2caf493322b2c4082355184b04ffda.png",
-		            "brand": {
-		              "frequent_skill": {
-		                "image": "\/images\/skill\/34e114a50a001778a574f7061039d43e632137b7.png",
-		                "name": "Sub Power Up",
-		                "id": "10"
-		              },
-		              "id": "16",
-		              "name": "Enperry",
-		              "image": "\/images\/brand\/de96243d58e41e928d30290162a6f496033da868.png"
-		            },
-		            "kind": "head",
-		            "image": "\/images\/head\/30cd8ed7847aa114483571d82bea61ddf7cc5c59.png"
-		          },
-		          "player_rank": 13,
-		          "shoes_skills": {
-		            "subs": [
-		              {
-		                "image": "\/images\/skill\/35f4ec4284fc5a19da58ffb1a7988eb26eb8bd7f.png",
-		                "id": "12",
-		                "name": "Bomb Defense Up"
-		              },
-		              {
-		                "id": "10",
-		                "name": "Sub Power Up",
-		                "image": "\/images\/skill\/34e114a50a001778a574f7061039d43e632137b7.png"
-		              },
-		              null
-		            ],
-		            "main": {
-		              "name": "Special Charge Up",
-		              "id": "5",
-		              "image": "\/images\/skill\/1378f3963526d7216ec44da35b924b81a8ff6a37.png"
-		            }
-		          },
-		          "shoes": {
-		            "rarity": 1,
-		            "id": "6006",
-		            "thumbnail": "\/images\/shoes\/0585889cd0579eab915d05b769827408e4a7694b.png",
-		            "brand": {
-		              "name": "Rockenberg",
-		              "id": "3",
-		              "frequent_skill": {
-		                "name": "Run Speed Up",
-		                "id": "3",
-		                "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
-		              },
-		              "image": "\/images\/brand\/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png"
-		            },
-		            "name": "Punk Whites",
-		            "kind": "shoes",
-		            "image": "\/images\/shoes\/7f725fb83d72e41297d15e70319bd7c51a5080c1.png"
-		          },
-		          "clothes": {
-		            "image": "\/images\/clothes\/fcf3d555c3deb78e183cdb6ea8187a89f5a01af1.png",
-		            "kind": "clothes",
-		            "rarity": 1,
-		            "id": "8018",
-		            "thumbnail": "\/images\/clothes\/4a12e6be82746741a91933cd46ffc07e64656942.png",
-		            "brand": {
-		              "image": "\/images\/brand\/9ac5752790dd6dbdc7a427df95e1bfe89fe318e0.png",
-		              "name": "Krak-On",
-		              "id": "2",
-		              "frequent_skill": {
-		                "id": "4",
-		                "name": "Swim Speed Up",
-		                "image": "\/images\/skill\/d138c293c8ddac42fadf0e6531100a88c79c81f6.png"
-		              }
-		            },
-		            "name": "Octobowler Shirt"
-		          },
-		          "head_skills": {
-		            "subs": [
-		              {
-		                "image": "\/images\/skill\/da8ff08954fd5d890fc8bc4dd4cb761e2a33b703.png",
-		                "name": "Ink Saver (Sub)",
-		                "id": "1"
-		              },
-		              {
-		                "name": "Swim Speed Up",
-		                "id": "4",
-		                "image": "\/images\/skill\/d138c293c8ddac42fadf0e6531100a88c79c81f6.png"
-		              },
-		              null
-		            ],
-		            "main": {
-		              "name": "Run Speed Up",
-		              "id": "3",
-		              "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
-		            }
-		          },
-		          "weapon": {
-		            "id": "41",
-		            "name": "Tentatek Splattershot",
-		            "thumbnail": "\/images\/weapon\/5f519a8b3f436c854dc81ee14bfc3a26aef09ebc.png",
-		            "special": {
-		              "id": "8",
-		              "image_b": "\/images\/special\/26e8117808ce17dadb0f23943359e5909fef4085.png",
-		              "name": "Inkjet",
-		              "image_a": "\/images\/special\/9871c82952ed0141be0310ace1942c9f5f66d655.png"
-		            },
-		            "image": "\/images\/weapon\/331d889d8113b794131080c8943e05a3d2c4547d.png",
-		            "sub": {
-		              "image_a": "\/images\/sub\/d2eaeec524d28ef315a13f8a9e11dd1039cb78aa.png",
-		              "id": "0",
-		              "name": "Splat Bomb",
-		              "image_b": "\/images\/sub\/b13bf755b279af83904892fae01cd98c866dfec7.png"
-		            }
-		          },
-		          "star_rank": 0,
-		          "principal_id": "3095008c85ee2a64",
-		          "udemae": {
-		            "number": 3,
-		            "s_plus_number": null,
-		            "name": "B-"
-		          },
-		          "nickname": "Zeke",
-		          "clothes_skills": {
-		            "subs": [
-		              {
-		                "image": "\/images\/skill\/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
-		                "name": "Swim Speed Up",
-		                "id": "4"
-		              },
-		              {
-		                "image": "\/images\/skill\/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
-		                "id": "4",
-		                "name": "Swim Speed Up"
-		              },
-		              null
-		            ],
-		            "main": {
-		              "id": "0",
-		              "name": "Ink Saver (Main)",
-		              "image": "\/images\/skill\/04b1de71fba1f14197b9163503955c52fd74858b.png"
-		            }
-		          }
-		        },
-		        "kill_count": 4,
-		        "special_count": 0
-		      },
-		      "type": "gachi",
-		      "other_team_count": 0,
-		      "udemae": {
-		        "number": 4,
-		        "name": "B",
-		        "s_plus_number": null
-		      },
-		      "star_rank": 0,
-		      "start_time": 1501289726,
-		      "player_rank": 13,
-		      "elapsed_time": 111,
-		      "stage": {
-		        "id": "5",
-		        "name": "Humpback Pump Track",
-		        "image": "\/images\/stage\/fc23fedca2dfbbd8707a14606d719a4004403d13.png"
-		      },
-		      "game_mode": {
-		        "key": "gachi",
-		        "name": "Ranked Battle"
-		      },
-		      "weapon_paint_point": 45060
-		    }
-		  },
-		  "schedule": {
-		    "schedules": {
-		      "gachi": [
-		        {
-		          "end_time": 1501401600,
-		          "stage_b": {
-		            "id": "7",
-		            "name": "Port Mackerel",
-		            "image": "\/images\/stage\/0907fc7dc325836a94d385919fe01dc13848612a.png"
-		          },
-		          "start_time": 1501394400,
-		          "stage_a": {
-		            "image": "\/images\/stage\/fc23fedca2dfbbd8707a14606d719a4004403d13.png",
-		            "id": "5",
-		            "name": "Humpback Pump Track"
-		          },
-		          "rule": {
-		            "multiline_name": "Rainmaker",
-		            "name": "Rainmaker",
-		            "key": "rainmaker"
-		          },
-		          "id": 4.7809526839201e+18,
-		          "game_mode": {
-		            "key": "gachi",
-		            "name": "Ranked Battle"
-		          }
-		        }
-		      ],
-		      "league": [
-		        {
-		          "game_mode": {
-		            "name": "League Battle",
-		            "key": "league"
-		          },
-		          "start_time": 1501394400,
-		          "stage_a": {
-		            "name": "Musselforge Fitness",
-		            "id": "1",
-		            "image": "\/images\/stage\/83acec875a5bb19418d7b87d5df4ba1e38ceac66.png"
-		          },
-		          "rule": {
-		            "name": "Tower Control",
-		            "multiline_name": "Tower\nControl",
-		            "key": "tower_control"
-		          },
-		          "id": 4.7809526839201e+18,
-		          "stage_b": {
-		            "id": "8",
-		            "name": "Moray Towers",
-		            "image": "\/images\/stage\/96fd8c0492331a30e60a217c94fd1d4c73a966cc.png"
-		          },
-		          "end_time": 1501401600
-		        }
-		      ],
-		      "regular": [
-		        {
-		          "game_mode": {
-		            "name": "Regular Battle",
-		            "key": "regular"
-		          },
-		          "start_time": 1501394400,
-		          "rule": {
-		            "key": "turf_war",
-		            "multiline_name": "Turf\nWar",
-		            "name": "Turf War"
-		          },
-		          "stage_a": {
-		            "image": "\/images\/stage\/bc794e337900afd763f8a88359f83df5679ddf12.png",
-		            "id": "3",
-		            "name": "Sturgeon Shipyard"
-		          },
-		          "id": 4.7809526839201e+18,
-		          "stage_b": {
-		            "name": "Starfish Mainstage",
-		            "id": "2",
-		            "image": "\/images\/stage\/187987856bf575c4155d021cb511034931d06d24.png"
-		          },
-		          "end_time": 1501401600
-		        }
-		      ]
-		    },
-		    "importance": 0.8
-		  },
-		  "unique_id": "16039570077175261768",
-		  "coop": {
-		    "importance": -1
-		  },
-		  "stats": {
-		    "recents": [
-		      {
-		        "elapsed_time": 148,
-		        "player_rank": 14,
-		        "start_time": 1501351041,
-		        "stage": {
-		          "name": "Starfish Mainstage",
-		          "id": "2",
-		          "image": "\/images\/stage\/187987856bf575c4155d021cb511034931d06d24.png"
-		        },
-		        "weapon_paint_point": 7473,
-		        "game_mode": {
-		          "key": "gachi",
-		          "name": "Ranked Battle"
-		        },
-		        "estimate_gachi_power": 1650,
-		        "my_team_result": {
-		          "key": "victory",
-		          "name": "VICTORY"
-		        },
-		        "battle_number": "134",
-		        "rule": {
-		          "key": "splat_zones",
-		          "multiline_name": "Splat\nZones",
-		          "name": "Splat Zones"
-		        },
-		        "other_team_result": {
-		          "name": "DEFEAT",
-		          "key": "defeat"
-		        },
-		        "my_team_count": 100,
-		        "player_result": {
-		          "player": {
-		            "head": {
-		              "image": "\/images\/head\/b911d153004f390fafd4e998fc080a3773ca9167.png",
-		              "kind": "head",
-		              "brand": {
-		                "name": "Skalop",
-		                "frequent_skill": {
-		                  "name": "Quick Respawn",
-		                  "id": "8",
-		                  "image": "\/images\/skill\/84ab4ba1188849dff63a4314955a53ab103b47df.png"
-		                },
-		                "id": "7",
-		                "image": "\/images\/brand\/8175954b5a7e02b8097dbb484c808c8f39d31f41.png"
-		              },
-		              "thumbnail": "\/images\/head\/d4fe25a57bdc9eae61ed20932b56ad89b2bdcdea.png",
-		              "name": "Jellyvader Cap",
-		              "rarity": 2,
-		              "id": "1023"
-		            },
-		            "player_rank": 14,
-		            "shoes_skills": {
-		              "main": {
-		                "image": "\/images\/skill\/33087a476135074af856151a89a6fe4d1d3a996e.png",
-		                "name": "Ink Resistance Up",
-		                "id": "11"
-		              },
-		              "subs": [
-		                {
-		                  "name": "Bomb Defense Up",
-		                  "id": "12",
-		                  "image": "\/images\/skill\/35f4ec4284fc5a19da58ffb1a7988eb26eb8bd7f.png"
-		                },
-		                {
-		                  "name": "Run Speed Up",
-		                  "id": "3",
-		                  "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
-		                },
-		                null
-		              ]
-		            },
-		            "star_rank": 0,
-		            "weapon": {
-		              "image": "\/images\/weapon\/aaead5ff0b63cdcb989b211d649b2552bb3e3a1b.png",
-		              "special": {
-		                "image_a": "\/images\/special\/e395a50d51459dcee4db62d8d1fbc4bb263bc326.png",
-		                "id": "0",
-		                "name": "Tenta Missiles",
-		                "image_b": "\/images\/special\/4819d9d318668bdd5dab248a23397ec351bc5c60.png"
-		              },
-		              "sub": {
-		                "image_a": "\/images\/sub\/14b4d4ef62e915e87bd7caa8b99fb4e986caea26.png",
-		                "id": "8",
-		                "image_b": "\/images\/sub\/627ae0ea02ab649a7a482ee7ee7ace85ca307f44.png",
-		                "name": "Point Sensor"
-		              },
-		              "id": "5030",
-		              "name": "Dualie Squelchers",
-		              "thumbnail": "\/images\/weapon\/3abcd1e1152e6d819bee363311edcf4737d14a45.png"
-		            },
-		            "principal_id": "3095008c85ee2a64",
-		            "shoes": {
-		              "rarity": 2,
-		              "id": "6003",
-		              "name": "Blue Moto Boots",
-		              "thumbnail": "\/images\/shoes\/6564c18c77f9d0dc58a100f4b187bd7612187db5.png",
-		              "brand": {
-		                "frequent_skill": {
-		                  "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
-		                  "id": "3",
-		                  "name": "Run Speed Up"
-		                },
-		                "id": "3",
-		                "name": "Rockenberg",
-		                "image": "\/images\/brand\/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png"
-		              },
-		              "image": "\/images\/shoes\/061da7c22c1d15acfc3c737383ced1d6f7ba48d8.png",
-		              "kind": "shoes"
-		            },
-		            "clothes": {
-		              "kind": "clothes",
-		              "image": "\/images\/clothes\/60e601b160dd7d7a4aecc6ad2a5e51ae2d5b52b7.png",
-		              "name": "Zekko Hoodie",
-		              "thumbnail": "\/images\/clothes\/158e48710cb726e94f2a5ac1fdb11c1c29f55ede.png",
-		              "brand": {
-		                "image": "\/images\/brand\/f3d01187fd633e7d48d9e4e16ef31da73279293c.png",
-		                "frequent_skill": {
-		                  "name": "Special Saver",
-		                  "id": "6",
-		                  "image": "\/images\/skill\/d83b962b84fcea9d02c591c296234f5de77f9682.png"
-		                },
-		                "id": "4",
-		                "name": "Zekko"
-		              },
-		              "rarity": 1,
-		              "id": "10002"
-		            },
-		            "head_skills": {
-		              "subs": [
-		                {
-		                  "image": "\/images\/skill\/daf6883039afa62da91eb93eb2a40b673f10b715.png",
-		                  "name": "Quick Super Jump",
-		                  "id": "9"
-		                },
-		                {
-		                  "name": "Quick Respawn",
-		                  "id": "8",
-		                  "image": "\/images\/skill\/84ab4ba1188849dff63a4314955a53ab103b47df.png"
-		                },
-		                null
-		              ],
-		              "main": {
-		                "image": "\/images\/skill\/da8ff08954fd5d890fc8bc4dd4cb761e2a33b703.png",
-		                "id": "1",
-		                "name": "Ink Saver (Sub)"
-		              }
-		            },
-		            "udemae": {
-		              "s_plus_number": null,
-		              "name": "B",
-		              "number": 4
-		            },
-		            "nickname": "Zeke",
-		            "clothes_skills": {
-		              "main": {
-		                "image": "\/images\/skill\/f0a99d1ab1a765b992b79610ebdc25b69d88fae9.png",
-		                "name": "Ninja Squid",
-		                "id": "104"
-		              },
-		              "subs": [
-		                {
-		                  "name": "Cold-Blooded",
-		                  "id": "13",
-		                  "image": "\/images\/skill\/efa003501e1152ef7b617b9e01517c915e05b7ac.png"
-		                },
-		                {
-		                  "name": "Special Saver",
-		                  "id": "6",
-		                  "image": "\/images\/skill\/d83b962b84fcea9d02c591c296234f5de77f9682.png"
-		                },
-		                null
-		              ]
-		            }
-		          },
-		          "kill_count": 5,
-		          "special_count": 1,
-		          "assist_count": 1,
-		          "game_paint_point": 493,
-		          "death_count": 5,
-		          "sort_score": 4
-		        },
-		        "udemae": {
-		          "number": 4,
-		          "name": "B",
-		          "s_plus_number": null
-		        },
-		        "other_team_count": 0,
-		        "type": "gachi",
-		        "star_rank": 0
-		      },
-		      {
-		        "weapon_paint_point": 6980,
-		        "game_mode": {
-		          "name": "Ranked Battle",
-		          "key": "gachi"
-		        },
-		        "stage": {
-		          "image": "\/images\/stage\/187987856bf575c4155d021cb511034931d06d24.png",
-		          "id": "2",
-		          "name": "Starfish Mainstage"
-		        },
-		        "player_rank": 14,
-		        "elapsed_time": 93,
-		        "start_time": 1501350877,
-		        "star_rank": 0,
-		        "udemae": {
-		          "number": 4,
-		          "name": "B",
-		          "s_plus_number": null
-		        },
-		        "type": "gachi",
-		        "other_team_count": 100,
-		        "my_team_count": 0,
-		        "player_result": {
-		          "game_paint_point": 390,
-		          "assist_count": 1,
-		          "death_count": 4,
-		          "sort_score": 6,
-		          "player": {
-		            "player_rank": 14,
-		            "shoes_skills": {
-		              "subs": [
-		                {
-		                  "id": "12",
-		                  "name": "Bomb Defense Up",
-		                  "image": "\/images\/skill\/35f4ec4284fc5a19da58ffb1a7988eb26eb8bd7f.png"
-		                },
-		                {
-		                  "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
-		                  "id": "3",
-		                  "name": "Run Speed Up"
-		                },
-		                null
-		              ],
-		              "main": {
-		                "image": "\/images\/skill\/33087a476135074af856151a89a6fe4d1d3a996e.png",
-		                "name": "Ink Resistance Up",
-		                "id": "11"
-		              }
-		            },
-		            "head": {
-		              "image": "\/images\/head\/b911d153004f390fafd4e998fc080a3773ca9167.png",
-		              "kind": "head",
-		              "name": "Jellyvader Cap",
-		              "thumbnail": "\/images\/head\/d4fe25a57bdc9eae61ed20932b56ad89b2bdcdea.png",
-		              "brand": {
-		                "name": "Skalop",
-		                "frequent_skill": {
-		                  "name": "Quick Respawn",
-		                  "id": "8",
-		                  "image": "\/images\/skill\/84ab4ba1188849dff63a4314955a53ab103b47df.png"
-		                },
-		                "id": "7",
-		                "image": "\/images\/brand\/8175954b5a7e02b8097dbb484c808c8f39d31f41.png"
-		              },
-		              "id": "1023",
-		              "rarity": 2
-		            },
-		            "udemae": {
-		              "number": 4,
-		              "name": "B",
-		              "s_plus_number": null
-		            },
-		            "clothes_skills": {
-		              "main": {
-		                "image": "\/images\/skill\/f0a99d1ab1a765b992b79610ebdc25b69d88fae9.png",
-		                "name": "Ninja Squid",
-		                "id": "104"
-		              },
-		              "subs": [
-		                {
-		                  "image": "\/images\/skill\/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
-		                  "id": "13",
-		                  "name": "Cold-Blooded"
-		                },
-		                {
-		                  "name": "Special Saver",
-		                  "id": "6",
-		                  "image": "\/images\/skill\/d83b962b84fcea9d02c591c296234f5de77f9682.png"
-		                },
-		                null
-		              ]
-		            },
-		            "nickname": "Zeke",
-		            "star_rank": 0,
-		            "principal_id": "3095008c85ee2a64",
-		            "weapon": {
-		              "sub": {
-		                "image_a": "\/images\/sub\/14b4d4ef62e915e87bd7caa8b99fb4e986caea26.png",
-		                "id": "8",
-		                "image_b": "\/images\/sub\/627ae0ea02ab649a7a482ee7ee7ace85ca307f44.png",
-		                "name": "Point Sensor"
-		              },
-		              "image": "\/images\/weapon\/aaead5ff0b63cdcb989b211d649b2552bb3e3a1b.png",
-		              "special": {
-		                "image_a": "\/images\/special\/e395a50d51459dcee4db62d8d1fbc4bb263bc326.png",
-		                "id": "0",
-		                "name": "Tenta Missiles",
-		                "image_b": "\/images\/special\/4819d9d318668bdd5dab248a23397ec351bc5c60.png"
-		              },
-		              "name": "Dualie Squelchers",
-		              "thumbnail": "\/images\/weapon\/3abcd1e1152e6d819bee363311edcf4737d14a45.png",
-		              "id": "5030"
-		            },
-		            "clothes": {
-		              "image": "\/images\/clothes\/60e601b160dd7d7a4aecc6ad2a5e51ae2d5b52b7.png",
-		              "kind": "clothes",
-		              "id": "10002",
-		              "rarity": 1,
-		              "brand": {
-		                "image": "\/images\/brand\/f3d01187fd633e7d48d9e4e16ef31da73279293c.png",
-		                "name": "Zekko",
-		                "id": "4",
-		                "frequent_skill": {
-		                  "id": "6",
-		                  "name": "Special Saver",
-		                  "image": "\/images\/skill\/d83b962b84fcea9d02c591c296234f5de77f9682.png"
-		                }
-		              },
-		              "thumbnail": "\/images\/clothes\/158e48710cb726e94f2a5ac1fdb11c1c29f55ede.png",
-		              "name": "Zekko Hoodie"
-		            },
-		            "shoes": {
-		              "image": "\/images\/shoes\/061da7c22c1d15acfc3c737383ced1d6f7ba48d8.png",
-		              "kind": "shoes",
-		              "name": "Blue Moto Boots",
-		              "thumbnail": "\/images\/shoes\/6564c18c77f9d0dc58a100f4b187bd7612187db5.png",
-		              "brand": {
-		                "image": "\/images\/brand\/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
-		                "name": "Rockenberg",
-		                "id": "3",
-		                "frequent_skill": {
-		                  "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
-		                  "name": "Run Speed Up",
-		                  "id": "3"
-		                }
-		              },
-		              "id": "6003",
-		              "rarity": 2
-		            },
-		            "head_skills": {
-		              "main": {
-		                "image": "\/images\/skill\/da8ff08954fd5d890fc8bc4dd4cb761e2a33b703.png",
-		                "name": "Ink Saver (Sub)",
-		                "id": "1"
-		              },
-		              "subs": [
-		                {
-		                  "image": "\/images\/skill\/daf6883039afa62da91eb93eb2a40b673f10b715.png",
-		                  "name": "Quick Super Jump",
-		                  "id": "9"
-		                },
-		                {
-		                  "image": "\/images\/skill\/84ab4ba1188849dff63a4314955a53ab103b47df.png",
-		                  "name": "Quick Respawn",
-		                  "id": "8"
-		                },
-		                null
-		              ]
-		            }
-		          },
-		          "kill_count": 2,
-		          "special_count": 0
-		        },
-		        "other_team_result": {
-		          "key": "victory",
-		          "name": "VICTORY"
-		        },
-		        "estimate_gachi_power": 1710,
-		        "my_team_result": {
-		          "key": "defeat",
-		          "name": "DEFEAT"
-		        },
-		        "battle_number": "133",
-		        "rule": {
-		          "multiline_name": "Splat\nZones",
-		          "name": "Splat Zones",
-		          "key": "splat_zones"
-		        }
-		      },
-		      {
-		        "rule": {
-		          "key": "splat_zones",
-		          "name": "Splat Zones",
-		          "multiline_name": "Splat\nZones"
-		        },
-		        "battle_number": "132",
-		        "my_team_result": {
-		          "name": "VICTORY",
-		          "key": "victory"
-		        },
-		        "estimate_gachi_power": 1750,
-		        "player_result": {
-		          "player": {
-		            "principal_id": "3095008c85ee2a64",
-		            "star_rank": 0,
-		            "weapon": {
-		              "image": "\/images\/weapon\/aaead5ff0b63cdcb989b211d649b2552bb3e3a1b.png",
-		              "special": {
-		                "name": "Tenta Missiles",
-		                "image_b": "\/images\/special\/4819d9d318668bdd5dab248a23397ec351bc5c60.png",
-		                "id": "0",
-		                "image_a": "\/images\/special\/e395a50d51459dcee4db62d8d1fbc4bb263bc326.png"
-		              },
-		              "sub": {
-		                "image_a": "\/images\/sub\/14b4d4ef62e915e87bd7caa8b99fb4e986caea26.png",
-		                "name": "Point Sensor",
-		                "image_b": "\/images\/sub\/627ae0ea02ab649a7a482ee7ee7ace85ca307f44.png",
-		                "id": "8"
-		              },
-		              "id": "5030",
-		              "thumbnail": "\/images\/weapon\/3abcd1e1152e6d819bee363311edcf4737d14a45.png",
-		              "name": "Dualie Squelchers"
-		            },
-		            "head_skills": {
-		              "subs": [
-		                {
-		                  "name": "Quick Super Jump",
-		                  "id": "9",
-		                  "image": "\/images\/skill\/daf6883039afa62da91eb93eb2a40b673f10b715.png"
-		                },
-		                {
-		                  "id": "8",
-		                  "name": "Quick Respawn",
-		                  "image": "\/images\/skill\/84ab4ba1188849dff63a4314955a53ab103b47df.png"
-		                },
-		                null
-		              ],
-		              "main": {
-		                "name": "Ink Saver (Sub)",
-		                "id": "1",
-		                "image": "\/images\/skill\/da8ff08954fd5d890fc8bc4dd4cb761e2a33b703.png"
-		              }
-		            },
-		            "shoes": {
-		              "kind": "shoes",
-		              "image": "\/images\/shoes\/061da7c22c1d15acfc3c737383ced1d6f7ba48d8.png",
-		              "name": "Blue Moto Boots",
-		              "thumbnail": "\/images\/shoes\/6564c18c77f9d0dc58a100f4b187bd7612187db5.png",
-		              "brand": {
-		                "image": "\/images\/brand\/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
-		                "frequent_skill": {
-		                  "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
-		                  "id": "3",
-		                  "name": "Run Speed Up"
-		                },
-		                "id": "3",
-		                "name": "Rockenberg"
-		              },
-		              "rarity": 2,
-		              "id": "6003"
-		            },
-		            "clothes": {
-		              "kind": "clothes",
-		              "image": "\/images\/clothes\/60e601b160dd7d7a4aecc6ad2a5e51ae2d5b52b7.png",
-		              "name": "Zekko Hoodie",
-		              "thumbnail": "\/images\/clothes\/158e48710cb726e94f2a5ac1fdb11c1c29f55ede.png",
-		              "brand": {
-		                "image": "\/images\/brand\/f3d01187fd633e7d48d9e4e16ef31da73279293c.png",
-		                "name": "Zekko",
-		                "frequent_skill": {
-		                  "image": "\/images\/skill\/d83b962b84fcea9d02c591c296234f5de77f9682.png",
-		                  "id": "6",
-		                  "name": "Special Saver"
-		                },
-		                "id": "4"
-		              },
-		              "id": "10002",
-		              "rarity": 1
-		            },
-		            "nickname": "Zeke",
-		            "udemae": {
-		              "number": 4,
-		              "s_plus_number": null,
-		              "name": "B"
-		            },
-		            "clothes_skills": {
-		              "subs": [
-		                {
-		                  "name": "Cold-Blooded",
-		                  "id": "13",
-		                  "image": "\/images\/skill\/efa003501e1152ef7b617b9e01517c915e05b7ac.png"
-		                },
-		                {
-		                  "id": "6",
-		                  "name": "Special Saver",
-		                  "image": "\/images\/skill\/d83b962b84fcea9d02c591c296234f5de77f9682.png"
-		                },
-		                null
-		              ],
-		              "main": {
-		                "name": "Ninja Squid",
-		                "id": "104",
-		                "image": "\/images\/skill\/f0a99d1ab1a765b992b79610ebdc25b69d88fae9.png"
-		              }
-		            },
-		            "head": {
-		              "image": "\/images\/head\/b911d153004f390fafd4e998fc080a3773ca9167.png",
-		              "kind": "head",
-		              "name": "Jellyvader Cap",
-		              "thumbnail": "\/images\/head\/d4fe25a57bdc9eae61ed20932b56ad89b2bdcdea.png",
-		              "brand": {
-		                "name": "Skalop",
-		                "id": "7",
-		                "frequent_skill": {
-		                  "image": "\/images\/skill\/84ab4ba1188849dff63a4314955a53ab103b47df.png",
-		                  "name": "Quick Respawn",
-		                  "id": "8"
-		                },
-		                "image": "\/images\/brand\/8175954b5a7e02b8097dbb484c808c8f39d31f41.png"
-		              },
-		              "id": "1023",
-		              "rarity": 2
-		            },
-		            "player_rank": 14,
-		            "shoes_skills": {
-		              "subs": [
-		                {
-		                  "name": "Bomb Defense Up",
-		                  "id": "12",
-		                  "image": "\/images\/skill\/35f4ec4284fc5a19da58ffb1a7988eb26eb8bd7f.png"
-		                },
-		                {
-		                  "id": "3",
-		                  "name": "Run Speed Up",
-		                  "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
-		                },
-		                null
-		              ],
-		              "main": {
-		                "image": "\/images\/skill\/33087a476135074af856151a89a6fe4d1d3a996e.png",
-		                "id": "11",
-		                "name": "Ink Resistance Up"
-		              }
-		            }
-		          },
-		          "special_count": 0,
-		          "kill_count": 2,
-		          "assist_count": 1,
-		          "game_paint_point": 348,
-		          "death_count": 1,
-		          "sort_score": 4
-		        },
-		        "my_team_count": 100,
-		        "other_team_result": {
-		          "key": "defeat",
-		          "name": "DEFEAT"
-		        },
-		        "type": "gachi",
-		        "other_team_count": 0,
-		        "udemae": {
-		          "number": 4,
-		          "name": "B",
-		          "s_plus_number": null
-		        },
-		        "star_rank": 0,
-		        "start_time": 1501350716,
-		        "elapsed_time": 83,
-		        "player_rank": 14,
-		        "stage": {
-		          "name": "Starfish Mainstage",
-		          "id": "2",
-		          "image": "\/images\/stage\/187987856bf575c4155d021cb511034931d06d24.png"
-		        },
-		        "game_mode": {
-		          "name": "Ranked Battle",
-		          "key": "gachi"
-		        },
-		        "weapon_paint_point": 6590
-		      },
-		      {
-		        "my_team_result": {
-		          "key": "victory",
-		          "name": "VICTORY"
-		        },
-		        "estimate_gachi_power": 1800,
-		        "rule": {
-		          "name": "Splat Zones",
-		          "multiline_name": "Splat\nZones",
-		          "key": "splat_zones"
-		        },
-		        "battle_number": "131",
-		        "other_team_result": {
-		          "key": "defeat",
-		          "name": "DEFEAT"
-		        },
-		        "my_team_count": 100,
-		        "player_result": {
-		          "kill_count": 5,
-		          "special_count": 0,
-		          "player": {
-		            "head": {
-		              "image": "\/images\/head\/b911d153004f390fafd4e998fc080a3773ca9167.png",
-		              "kind": "head",
-		              "rarity": 2,
-		              "id": "1023",
-		              "brand": {
-		                "id": "7",
-		                "frequent_skill": {
-		                  "image": "\/images\/skill\/84ab4ba1188849dff63a4314955a53ab103b47df.png",
-		                  "id": "8",
-		                  "name": "Quick Respawn"
-		                },
-		                "name": "Skalop",
-		                "image": "\/images\/brand\/8175954b5a7e02b8097dbb484c808c8f39d31f41.png"
-		              },
-		              "thumbnail": "\/images\/head\/d4fe25a57bdc9eae61ed20932b56ad89b2bdcdea.png",
-		              "name": "Jellyvader Cap"
-		            },
-		            "shoes_skills": {
-		              "main": {
-		                "image": "\/images\/skill\/33087a476135074af856151a89a6fe4d1d3a996e.png",
-		                "id": "11",
-		                "name": "Ink Resistance Up"
-		              },
-		              "subs": [
-		                {
-		                  "id": "12",
-		                  "name": "Bomb Defense Up",
-		                  "image": "\/images\/skill\/35f4ec4284fc5a19da58ffb1a7988eb26eb8bd7f.png"
-		                },
-		                {
-		                  "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
-		                  "name": "Run Speed Up",
-		                  "id": "3"
-		                },
-		                null
-		              ]
-		            },
-		            "player_rank": 14,
-		            "head_skills": {
-		              "subs": [
-		                {
-		                  "image": "\/images\/skill\/daf6883039afa62da91eb93eb2a40b673f10b715.png",
-		                  "id": "9",
-		                  "name": "Quick Super Jump"
-		                },
-		                {
-		                  "image": "\/images\/skill\/84ab4ba1188849dff63a4314955a53ab103b47df.png",
-		                  "id": "8",
-		                  "name": "Quick Respawn"
-		                },
-		                null
-		              ],
-		              "main": {
-		                "image": "\/images\/skill\/da8ff08954fd5d890fc8bc4dd4cb761e2a33b703.png",
-		                "id": "1",
-		                "name": "Ink Saver (Sub)"
-		              }
-		            },
-		            "shoes": {
-		              "id": "6003",
-		              "rarity": 2,
-		              "name": "Blue Moto Boots",
-		              "thumbnail": "\/images\/shoes\/6564c18c77f9d0dc58a100f4b187bd7612187db5.png",
-		              "brand": {
-		                "frequent_skill": {
-		                  "name": "Run Speed Up",
-		                  "id": "3",
-		                  "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
-		                },
-		                "id": "3",
-		                "name": "Rockenberg",
-		                "image": "\/images\/brand\/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png"
-		              },
-		              "image": "\/images\/shoes\/061da7c22c1d15acfc3c737383ced1d6f7ba48d8.png",
-		              "kind": "shoes"
-		            },
-		            "clothes": {
-		              "name": "Zekko Hoodie",
-		              "thumbnail": "\/images\/clothes\/158e48710cb726e94f2a5ac1fdb11c1c29f55ede.png",
-		              "brand": {
-		                "image": "\/images\/brand\/f3d01187fd633e7d48d9e4e16ef31da73279293c.png",
-		                "frequent_skill": {
-		                  "image": "\/images\/skill\/d83b962b84fcea9d02c591c296234f5de77f9682.png",
-		                  "id": "6",
-		                  "name": "Special Saver"
-		                },
-		                "id": "4",
-		                "name": "Zekko"
-		              },
-		              "id": "10002",
-		              "rarity": 1,
-		              "image": "\/images\/clothes\/60e601b160dd7d7a4aecc6ad2a5e51ae2d5b52b7.png",
-		              "kind": "clothes"
-		            },
-		            "star_rank": 0,
-		            "principal_id": "3095008c85ee2a64",
-		            "weapon": {
-		              "sub": {
-		                "id": "8",
-		                "image_b": "\/images\/sub\/627ae0ea02ab649a7a482ee7ee7ace85ca307f44.png",
-		                "name": "Point Sensor",
-		                "image_a": "\/images\/sub\/14b4d4ef62e915e87bd7caa8b99fb4e986caea26.png"
-		              },
-		              "image": "\/images\/weapon\/aaead5ff0b63cdcb989b211d649b2552bb3e3a1b.png",
-		              "special": {
-		                "image_a": "\/images\/special\/e395a50d51459dcee4db62d8d1fbc4bb263bc326.png",
-		                "name": "Tenta Missiles",
-		                "image_b": "\/images\/special\/4819d9d318668bdd5dab248a23397ec351bc5c60.png",
-		                "id": "0"
-		              },
-		              "thumbnail": "\/images\/weapon\/3abcd1e1152e6d819bee363311edcf4737d14a45.png",
-		              "name": "Dualie Squelchers",
-		              "id": "5030"
-		            },
-		            "nickname": "Zeke",
-		            "udemae": {
-		              "number": 4,
-		              "name": "B",
-		              "s_plus_number": null
-		            },
-		            "clothes_skills": {
-		              "main": {
-		                "id": "104",
-		                "name": "Ninja Squid",
-		                "image": "\/images\/skill\/f0a99d1ab1a765b992b79610ebdc25b69d88fae9.png"
-		              },
-		              "subs": [
-		                {
-		                  "image": "\/images\/skill\/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
-		                  "name": "Cold-Blooded",
-		                  "id": "13"
-		                },
-		                {
-		                  "image": "\/images\/skill\/d83b962b84fcea9d02c591c296234f5de77f9682.png",
-		                  "id": "6",
-		                  "name": "Special Saver"
-		                },
-		                null
-		              ]
-		            }
-		          },
-		          "sort_score": 4,
-		          "death_count": 1,
-		          "game_paint_point": 384,
-		          "assist_count": 1
-		        },
-		        "udemae": {
-		          "number": 4,
-		          "s_plus_number": null,
-		          "name": "B"
-		        },
-		        "other_team_count": 0,
-		        "type": "gachi",
-		        "star_rank": 0,
-		        "elapsed_time": 85,
-		        "player_rank": 14,
-		        "start_time": 1501350557,
-		        "stage": {
-		          "image": "\/images\/stage\/98baf21c0366ce6e03299e2326fe6d27a7582dce.png",
-		          "id": "0",
-		          "name": "The Reef"
-		        },
-		        "weapon_paint_point": 6242,
-		        "game_mode": {
-		          "key": "gachi",
-		          "name": "Ranked Battle"
-		        }
-		      }
-		    ],
-		    "importance": 0.69535648148148
-		  }
-		}
+          "unique_id": "8005711291901782986",
+          "coop": {
+            "importance": -1
+          },
+          "challenge": {
+            "importance": 0.1,
+            "last_archived_challenge": {
+              "paint_points": 121000,
+              "name": "Squid Research HQ x10",
+              "image": "/images/challenge/bc823e738fddce2cfb96469da441a5e58099740e.png",
+              "key": "tenfold_squid_research_lab"
+            },
+            "next_challenge": {
+              "key": "mont_saint_michel",
+              "image": "/images/challenge/12211d428f8a2dfec07e96ea40a9165bd9f03fe4.png",
+              "name": "Mont-Saint-Michel",
+              "paint_points": 293000
+            },
+            "total_paint_point": 262140
+          },
+          "onlineshop": {
+            "importance": 0.103333333333333,
+            "merchandise": {
+              "id": "4780952683920475208",
+              "end_time": 1507363200,
+              "gear": {
+                "thumbnail": "/images/clothes/021fa31425bcac666c225fd61000bd5eb8970efb.png",
+                "name": "Shirt with Blue Hoodie",
+                "brand": {
+                  "id": "8",
+                  "image": "/images/brand/36bc10db0aa2640c87ad712fc0281515beedcca1.png",
+                  "frequent_skill": {
+                    "id": "0",
+                    "image": "/images/skill/04b1de71fba1f14197b9163503955c52fd74858b.png",
+                    "name": "Ink Saver (Main)"
+                  },
+                  "name": "Splash Mob"
+                },
+                "id": "10004",
+                "image": "/images/clothes/93e5accce772fc01017dcfdd9019d69f53acae4a.png",
+                "kind": "clothes",
+                "rarity": 1
+              },
+              "kind": "clothes",
+              "skill": {
+                "id": "2",
+                "image": "/images/skill/c14f4471b26e0f918c736b5c17e03212290f4541.png",
+                "name": "Ink Recovery Up"
+              },
+              "price": 5800
+            }
+          },
+          "schedule": {
+            "importance": 0.8,
+            "schedules": {
+              "league": [
+                {
+                  "id": 4780952683920382000,
+                  "end_time": 1507363200,
+                  "start_time": 1507356000,
+                  "rule": {
+                    "name": "Rainmaker",
+                    "multiline_name": "Rainmaker",
+                    "key": "rainmaker"
+                  },
+                  "game_mode": {
+                    "name": "League Battle",
+                    "key": "league"
+                  },
+                  "stage_b": {
+                    "id": "5",
+                    "image": "/images/stage/fc23fedca2dfbbd8707a14606d719a4004403d13.png",
+                    "name": "Humpback Pump Track"
+                  },
+                  "stage_a": {
+                    "image": "/images/stage/187987856bf575c4155d021cb511034931d06d24.png",
+                    "id": "2",
+                    "name": "Starfish Mainstage"
+                  }
+                }
+              ],
+              "regular": [
+                {
+                  "stage_b": {
+                    "image": "/images/stage/8c95053b3043e163cbfaaf1ec1e5f3eb770e5e07.png",
+                    "id": "9",
+                    "name": "Snapper Canal"
+                  },
+                  "stage_a": {
+                    "id": "8",
+                    "image": "/images/stage/96fd8c0492331a30e60a217c94fd1d4c73a966cc.png",
+                    "name": "Moray Towers"
+                  },
+                  "start_time": 1507356000,
+                  "end_time": 1507363200,
+                  "id": 4780952683920382000,
+                  "game_mode": {
+                    "key": "regular",
+                    "name": "Regular Battle"
+                  },
+                  "rule": {
+                    "multiline_name": "Turf\nWar",
+                    "key": "turf_war",
+                    "name": "Turf War"
+                  }
+                }
+              ],
+              "gachi": [
+                {
+                  "stage_b": {
+                    "id": "9",
+                    "image": "/images/stage/8c95053b3043e163cbfaaf1ec1e5f3eb770e5e07.png",
+                    "name": "Snapper Canal"
+                  },
+                  "stage_a": {
+                    "id": "0",
+                    "image": "/images/stage/98baf21c0366ce6e03299e2326fe6d27a7582dce.png",
+                    "name": "The Reef"
+                  },
+                  "id": 4780952683920382000,
+                  "end_time": 1507363200,
+                  "start_time": 1507356000,
+                  "rule": {
+                    "multiline_name": "Splat\nZones",
+                    "key": "splat_zones",
+                    "name": "Splat Zones"
+                  },
+                  "game_mode": {
+                    "key": "gachi",
+                    "name": "Ranked Battle"
+                  }
+                }
+              ]
+            }
+          },
+          "weapon_availability": {
+            "availabilities": [
+              {
+                "weapon": {
+                  "name": "Bamboozler 14 Mk I",
+                  "thumbnail": "/images/weapon/bbabdf1a9ad9fc2217c21cc35993c04ee9bc58b5.png",
+                  "sub": {
+                    "id": "3",
+                    "image_a": "/images/sub/e398a9e0360f048b6a0c4c3c1e89211cca96577f.png",
+                    "image_b": "/images/sub/2b5797c0ad847a54b9bd8168e75050484919d373.png",
+                    "name": "Curling Bomb"
+                  },
+                  "special": {
+                    "name": "Tenta Missiles",
+                    "image_b": "/images/special/4819d9d318668bdd5dab248a23397ec351bc5c60.png",
+                    "id": "0",
+                    "image_a": "/images/special/e395a50d51459dcee4db62d8d1fbc4bb263bc326.png"
+                  },
+                  "image": "/images/weapon/6ecbbb897d6c59a5c03097216ef4f803366ea6fa.png",
+                  "id": "2050"
+                },
+                "release_time": 1507341600
+              }
+            ],
+            "importance": 0.940104166666667
+          },
+          "stats": {
+            "importance": 0.856893518518519,
+            "recents": [
+              {
+                "rule": {
+                  "key": "rainmaker",
+                  "multiline_name": "Rainmaker",
+                  "name": "Rainmaker"
+                },
+                "elapsed_time": 147,
+                "other_team_result": {
+                  "key": "victory",
+                  "name": "VICTORY"
+                },
+                "stage": {
+                  "image": "/images/stage/a12e4bf9f871677a5f3735d421317fbbf09e1a78.png",
+                  "id": "10",
+                  "name": "Kelp Dome"
+                },
+                "other_team_count": 100,
+                "type": "gachi",
+                "weapon_paint_point": 9868,
+                "estimate_gachi_power": 1600,
+                "game_mode": {
+                  "name": "Ranked Battle",
+                  "key": "gachi"
+                },
+                "star_rank": 0,
+                "udemae": {
+                  "s_plus_number": null,
+                  "name": "B+",
+                  "number": 5
+                },
+                "battle_number": "454",
+                "start_time": 1507349539,
+                "my_team_count": 0,
+                "player_result": {
+                  "player": {
+                    "head_skills": {
+                      "subs": [
+                        {
+                          "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
+                          "id": "13",
+                          "name": "Cold-Blooded"
+                        },
+                        {
+                          "name": "Special Power Up",
+                          "id": "7",
+                          "image": "/images/skill/f20a3e85feeb6b4bb021d28059afd6265cee0b43.png"
+                        },
+                        {
+                          "id": "3",
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                          "name": "Run Speed Up"
+                        }
+                      ],
+                      "main": {
+                        "name": "Swim Speed Up",
+                        "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
+                        "id": "4"
+                      }
+                    },
+                    "principal_id": "5c469bb0e0f1a893",
+                    "player_rank": 28,
+                    "nickname": "Virepri",
+                    "head": {
+                      "thumbnail": "/images/head/1a8ff55d9ecdd03674bf4bf38fe90a7cb8200fb1.png",
+                      "name": "Squid Hairclip",
+                      "brand": {
+                        "name": "amiibo",
+                        "image": "/images/brand/154440ecbfb65a22cdb224fac843b02cccbcad03.png",
+                        "id": "99"
+                      },
+                      "image": "/images/head/7242a4b5e8b7c097e1676a2adb1b69dd89b3c292.png",
+                      "id": "25000",
+                      "rarity": 1,
+                      "kind": "head"
+                    },
+                    "udemae": {
+                      "name": "B+",
+                      "number": 5,
+                      "s_plus_number": null
+                    },
+                    "star_rank": 0,
+                    "clothes_skills": {
+                      "main": {
+                        "name": "Ninja Squid",
+                        "image": "/images/skill/f0a99d1ab1a765b992b79610ebdc25b69d88fae9.png",
+                        "id": "104"
+                      },
+                      "subs": [
+                        {
+                          "id": "11",
+                          "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png",
+                          "name": "Ink Resistance Up"
+                        },
+                        null,
+                        null
+                      ]
+                    },
+                    "clothes": {
+                      "thumbnail": "/images/clothes/d23b9b4c3f866f219b2742eea8444b94ee82fcce.png",
+                      "name": "Pullover Coat",
+                      "brand": {
+                        "image": "/images/brand/4b05e494bf9a547b4d625fd52dcdd930a6c4defc.png",
+                        "id": "17",
+                        "frequent_skill": {
+                          "id": "13",
+                          "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
+                          "name": "Cold-Blooded"
+                        },
+                        "name": "Toni Kensa"
+                      },
+                      "id": "5022",
+                      "image": "/images/clothes/a66bdd68e295196d761343063eca140529086aef.png",
+                      "rarity": 2,
+                      "kind": "clothes"
+                    },
+                    "weapon": {
+                      "name": "Dapple Dualies",
+                      "sub": {
+                        "name": "Squid Beakon",
+                        "image_b": "/images/sub/9c61e8fb4acef3d926be099603a74a02b0976431.png",
+                        "id": "10",
+                        "image_a": "/images/sub/5a31dff440e88eb711c6e810c25b8ae3ce8e64b8.png"
+                      },
+                      "thumbnail": "/images/weapon/377fede68e69d13c1790fc90c3cb8c912a2a89db.png",
+                      "special": {
+                        "image_a": "/images/special/0a6b11ca3d93e99fa53aa50ee8a948c6747a651d.png",
+                        "id": "3",
+                        "image_b": "/images/special/0ee7864672be208c9ea57904eb172e942dc4471f.png",
+                        "name": "Suction-Bomb Launcher"
+                      },
+                      "id": "5000",
+                      "image": "/images/weapon/cc4bc30ff53bf2b45bd5e3dadceb39d52b95761f.png"
+                    },
+                    "shoes": {
+                      "thumbnail": "/images/shoes/6564c18c77f9d0dc58a100f4b187bd7612187db5.png",
+                      "brand": {
+                        "image": "/images/brand/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
+                        "id": "3",
+                        "name": "Rockenberg",
+                        "frequent_skill": {
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                          "id": "3",
+                          "name": "Run Speed Up"
+                        }
+                      },
+                      "name": "Blue Moto Boots",
+                      "image": "/images/shoes/061da7c22c1d15acfc3c737383ced1d6f7ba48d8.png",
+                      "id": "6003",
+                      "rarity": 2,
+                      "kind": "shoes"
+                    },
+                    "shoes_skills": {
+                      "subs": [
+                        {
+                          "name": "Run Speed Up",
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                          "id": "3"
+                        },
+                        {
+                          "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
+                          "id": "4",
+                          "name": "Swim Speed Up"
+                        },
+                        {
+                          "name": "Quick Respawn",
+                          "id": "8",
+                          "image": "/images/skill/84ab4ba1188849dff63a4314955a53ab103b47df.png"
+                        }
+                      ],
+                      "main": {
+                        "id": "11",
+                        "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png",
+                        "name": "Ink Resistance Up"
+                      }
+                    }
+                  },
+                  "special_count": 1,
+                  "sort_score": 2,
+                  "death_count": 5,
+                  "kill_count": 3,
+                  "assist_count": 0,
+                  "game_paint_point": 463
+                },
+                "my_team_result": {
+                  "key": "defeat",
+                  "name": "DEFEAT"
+                },
+                "player_rank": 28
+              },
+              {
+                "star_rank": 0,
+                "udemae": {
+                  "name": "B+",
+                  "number": 5,
+                  "s_plus_number": null
+                },
+                "game_mode": {
+                  "name": "Ranked Battle",
+                  "key": "gachi"
+                },
+                "player_rank": 28,
+                "my_team_count": 100,
+                "my_team_result": {
+                  "name": "VICTORY",
+                  "key": "victory"
+                },
+                "player_result": {
+                  "assist_count": 0,
+                  "game_paint_point": 176,
+                  "death_count": 3,
+                  "kill_count": 2,
+                  "sort_score": 0,
+                  "player": {
+                    "weapon": {
+                      "special": {
+                        "name": "Suction-Bomb Launcher",
+                        "image_b": "/images/special/0ee7864672be208c9ea57904eb172e942dc4471f.png",
+                        "image_a": "/images/special/0a6b11ca3d93e99fa53aa50ee8a948c6747a651d.png",
+                        "id": "3"
+                      },
+                      "id": "5000",
+                      "image": "/images/weapon/cc4bc30ff53bf2b45bd5e3dadceb39d52b95761f.png",
+                      "name": "Dapple Dualies",
+                      "thumbnail": "/images/weapon/377fede68e69d13c1790fc90c3cb8c912a2a89db.png",
+                      "sub": {
+                        "image_b": "/images/sub/9c61e8fb4acef3d926be099603a74a02b0976431.png",
+                        "image_a": "/images/sub/5a31dff440e88eb711c6e810c25b8ae3ce8e64b8.png",
+                        "id": "10",
+                        "name": "Squid Beakon"
+                      }
+                    },
+                    "clothes": {
+                      "kind": "clothes",
+                      "rarity": 2,
+                      "image": "/images/clothes/a66bdd68e295196d761343063eca140529086aef.png",
+                      "id": "5022",
+                      "brand": {
+                        "image": "/images/brand/4b05e494bf9a547b4d625fd52dcdd930a6c4defc.png",
+                        "id": "17",
+                        "name": "Toni Kensa",
+                        "frequent_skill": {
+                          "id": "13",
+                          "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
+                          "name": "Cold-Blooded"
+                        }
+                      },
+                      "name": "Pullover Coat",
+                      "thumbnail": "/images/clothes/d23b9b4c3f866f219b2742eea8444b94ee82fcce.png"
+                    },
+                    "clothes_skills": {
+                      "subs": [
+                        {
+                          "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png",
+                          "id": "11",
+                          "name": "Ink Resistance Up"
+                        },
+                        null,
+                        null
+                      ],
+                      "main": {
+                        "name": "Ninja Squid",
+                        "id": "104",
+                        "image": "/images/skill/f0a99d1ab1a765b992b79610ebdc25b69d88fae9.png"
+                      }
+                    },
+                    "star_rank": 0,
+                    "udemae": {
+                      "s_plus_number": null,
+                      "number": 5,
+                      "name": "B+"
+                    },
+                    "shoes_skills": {
+                      "main": {
+                        "id": "11",
+                        "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png",
+                        "name": "Ink Resistance Up"
+                      },
+                      "subs": [
+                        {
+                          "name": "Run Speed Up",
+                          "id": "3",
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
+                        },
+                        {
+                          "name": "Swim Speed Up",
+                          "id": "4",
+                          "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png"
+                        },
+                        {
+                          "image": "/images/skill/84ab4ba1188849dff63a4314955a53ab103b47df.png",
+                          "id": "8",
+                          "name": "Quick Respawn"
+                        }
+                      ]
+                    },
+                    "shoes": {
+                      "name": "Blue Moto Boots",
+                      "brand": {
+                        "image": "/images/brand/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
+                        "id": "3",
+                        "frequent_skill": {
+                          "name": "Run Speed Up",
+                          "id": "3",
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
+                        },
+                        "name": "Rockenberg"
+                      },
+                      "thumbnail": "/images/shoes/6564c18c77f9d0dc58a100f4b187bd7612187db5.png",
+                      "rarity": 2,
+                      "kind": "shoes",
+                      "id": "6003",
+                      "image": "/images/shoes/061da7c22c1d15acfc3c737383ced1d6f7ba48d8.png"
+                    },
+                    "nickname": "Virepri",
+                    "player_rank": 28,
+                    "principal_id": "5c469bb0e0f1a893",
+                    "head_skills": {
+                      "subs": [
+                        {
+                          "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
+                          "id": "13",
+                          "name": "Cold-Blooded"
+                        },
+                        {
+                          "name": "Special Power Up",
+                          "image": "/images/skill/f20a3e85feeb6b4bb021d28059afd6265cee0b43.png",
+                          "id": "7"
+                        },
+                        {
+                          "name": "Run Speed Up",
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                          "id": "3"
+                        }
+                      ],
+                      "main": {
+                        "name": "Swim Speed Up",
+                        "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
+                        "id": "4"
+                      }
+                    },
+                    "head": {
+                      "kind": "head",
+                      "rarity": 1,
+                      "image": "/images/head/7242a4b5e8b7c097e1676a2adb1b69dd89b3c292.png",
+                      "id": "25000",
+                      "name": "Squid Hairclip",
+                      "brand": {
+                        "id": "99",
+                        "image": "/images/brand/154440ecbfb65a22cdb224fac843b02cccbcad03.png",
+                        "name": "amiibo"
+                      },
+                      "thumbnail": "/images/head/1a8ff55d9ecdd03674bf4bf38fe90a7cb8200fb1.png"
+                    }
+                  },
+                  "special_count": 0
+                },
+                "start_time": 1507349356,
+                "battle_number": "453",
+                "stage": {
+                  "name": "Snapper Canal",
+                  "image": "/images/stage/8c95053b3043e163cbfaaf1ec1e5f3eb770e5e07.png",
+                  "id": "9"
+                },
+                "elapsed_time": 89,
+                "other_team_result": {
+                  "name": "DEFEAT",
+                  "key": "defeat"
+                },
+                "rule": {
+                  "key": "rainmaker",
+                  "multiline_name": "Rainmaker",
+                  "name": "Rainmaker"
+                },
+                "estimate_gachi_power": 1410,
+                "weapon_paint_point": 9405,
+                "other_team_count": 0,
+                "type": "gachi"
+              },
+              {
+                "player_rank": 28,
+                "my_team_count": 0,
+                "my_team_result": {
+                  "name": "DEFEAT",
+                  "key": "defeat"
+                },
+                "player_result": {
+                  "assist_count": 2,
+                  "game_paint_point": 684,
+                  "death_count": 8,
+                  "kill_count": 5,
+                  "sort_score": 2,
+                  "player": {
+                    "head": {
+                      "thumbnail": "/images/head/1a8ff55d9ecdd03674bf4bf38fe90a7cb8200fb1.png",
+                      "name": "Squid Hairclip",
+                      "brand": {
+                        "id": "99",
+                        "image": "/images/brand/154440ecbfb65a22cdb224fac843b02cccbcad03.png",
+                        "name": "amiibo"
+                      },
+                      "id": "25000",
+                      "image": "/images/head/7242a4b5e8b7c097e1676a2adb1b69dd89b3c292.png",
+                      "rarity": 1,
+                      "kind": "head"
+                    },
+                    "nickname": "Virepri",
+                    "player_rank": 28,
+                    "head_skills": {
+                      "main": {
+                        "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
+                        "id": "4",
+                        "name": "Swim Speed Up"
+                      },
+                      "subs": [
+                        {
+                          "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
+                          "id": "13",
+                          "name": "Cold-Blooded"
+                        },
+                        {
+                          "name": "Special Power Up",
+                          "image": "/images/skill/f20a3e85feeb6b4bb021d28059afd6265cee0b43.png",
+                          "id": "7"
+                        },
+                        {
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                          "id": "3",
+                          "name": "Run Speed Up"
+                        }
+                      ]
+                    },
+                    "principal_id": "5c469bb0e0f1a893",
+                    "shoes_skills": {
+                      "subs": [
+                        {
+                          "name": "Run Speed Up",
+                          "id": "3",
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
+                        },
+                        {
+                          "name": "Swim Speed Up",
+                          "id": "4",
+                          "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png"
+                        },
+                        {
+                          "name": "Quick Respawn",
+                          "id": "8",
+                          "image": "/images/skill/84ab4ba1188849dff63a4314955a53ab103b47df.png"
+                        }
+                      ],
+                      "main": {
+                        "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png",
+                        "id": "11",
+                        "name": "Ink Resistance Up"
+                      }
+                    },
+                    "shoes": {
+                      "image": "/images/shoes/061da7c22c1d15acfc3c737383ced1d6f7ba48d8.png",
+                      "id": "6003",
+                      "rarity": 2,
+                      "kind": "shoes",
+                      "thumbnail": "/images/shoes/6564c18c77f9d0dc58a100f4b187bd7612187db5.png",
+                      "name": "Blue Moto Boots",
+                      "brand": {
+                        "name": "Rockenberg",
+                        "frequent_skill": {
+                          "name": "Run Speed Up",
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                          "id": "3"
+                        },
+                        "id": "3",
+                        "image": "/images/brand/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png"
+                      }
+                    },
+                    "weapon": {
+                      "sub": {
+                        "image_b": "/images/sub/f0e4b4bad0e37031b8cb8ff397d4bb0ad9c86307.png",
+                        "id": "4",
+                        "image_a": "/images/sub/457de86fa079df54c7a3c96decca49a55a1686ae.png",
+                        "name": "Autobomb"
+                      },
+                      "thumbnail": "/images/weapon/5f565ede7ae220d5b1d453b3ef55b8d20d7b9a2a.png",
+                      "name": "Octobrush",
+                      "image": "/images/weapon/f1d5740dfb7d87f7e43974bbe5585445368741b8.png",
+                      "id": "1110",
+                      "special": {
+                        "id": "8",
+                        "image_a": "/images/special/9871c82952ed0141be0310ace1942c9f5f66d655.png",
+                        "image_b": "/images/special/26e8117808ce17dadb0f23943359e5909fef4085.png",
+                        "name": "Inkjet"
+                      }
+                    },
+                    "clothes": {
+                      "thumbnail": "/images/clothes/d23b9b4c3f866f219b2742eea8444b94ee82fcce.png",
+                      "brand": {
+                        "id": "17",
+                        "image": "/images/brand/4b05e494bf9a547b4d625fd52dcdd930a6c4defc.png",
+                        "name": "Toni Kensa",
+                        "frequent_skill": {
+                          "name": "Cold-Blooded",
+                          "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
+                          "id": "13"
+                        }
+                      },
+                      "name": "Pullover Coat",
+                      "id": "5022",
+                      "image": "/images/clothes/a66bdd68e295196d761343063eca140529086aef.png",
+                      "kind": "clothes",
+                      "rarity": 2
+                    },
+                    "clothes_skills": {
+                      "main": {
+                        "name": "Ninja Squid",
+                        "image": "/images/skill/f0a99d1ab1a765b992b79610ebdc25b69d88fae9.png",
+                        "id": "104"
+                      },
+                      "subs": [
+                        {
+                          "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png",
+                          "id": "11",
+                          "name": "Ink Resistance Up"
+                        },
+                        null,
+                        null
+                      ]
+                    },
+                    "udemae": {
+                      "number": 5,
+                      "name": "B+",
+                      "s_plus_number": null
+                    },
+                    "star_rank": 0
+                  },
+                  "special_count": 0
+                },
+                "start_time": 1507348685,
+                "battle_number": "452",
+                "udemae": {
+                  "s_plus_number": null,
+                  "name": "B+",
+                  "number": 5
+                },
+                "star_rank": 0,
+                "game_mode": {
+                  "key": "gachi",
+                  "name": "Ranked Battle"
+                },
+                "estimate_gachi_power": 1490,
+                "weapon_paint_point": 56671,
+                "type": "gachi",
+                "other_team_count": 100,
+                "stage": {
+                  "image": "/images/stage/5c030a505ee57c889d3e5268a4b10c1f1f37880a.png",
+                  "id": "4",
+                  "name": "Inkblot Art Academy"
+                },
+                "other_team_result": {
+                  "key": "victory",
+                  "name": "VICTORY"
+                },
+                "elapsed_time": 244,
+                "rule": {
+                  "name": "Splat Zones",
+                  "multiline_name": "Splat\nZones",
+                  "key": "splat_zones"
+                }
+              },
+              {
+                "other_team_result": {
+                  "name": "VICTORY",
+                  "key": "victory"
+                },
+                "elapsed_time": 80,
+                "stage": {
+                  "id": "4",
+                  "image": "/images/stage/5c030a505ee57c889d3e5268a4b10c1f1f37880a.png",
+                  "name": "Inkblot Art Academy"
+                },
+                "rule": {
+                  "multiline_name": "Splat\nZones",
+                  "key": "splat_zones",
+                  "name": "Splat Zones"
+                },
+                "estimate_gachi_power": 1640,
+                "weapon_paint_point": 55987,
+                "type": "gachi",
+                "other_team_count": 100,
+                "star_rank": 0,
+                "udemae": {
+                  "number": 5,
+                  "name": "B+",
+                  "s_plus_number": null
+                },
+                "game_mode": {
+                  "key": "gachi",
+                  "name": "Ranked Battle"
+                },
+                "player_rank": 28,
+                "my_team_result": {
+                  "name": "DEFEAT",
+                  "key": "defeat"
+                },
+                "my_team_count": 0,
+                "player_result": {
+                  "assist_count": 0,
+                  "game_paint_point": 260,
+                  "death_count": 3,
+                  "kill_count": 4,
+                  "sort_score": 2,
+                  "player": {
+                    "head": {
+                      "kind": "head",
+                      "rarity": 1,
+                      "id": "25000",
+                      "image": "/images/head/7242a4b5e8b7c097e1676a2adb1b69dd89b3c292.png",
+                      "brand": {
+                        "image": "/images/brand/154440ecbfb65a22cdb224fac843b02cccbcad03.png",
+                        "id": "99",
+                        "name": "amiibo"
+                      },
+                      "name": "Squid Hairclip",
+                      "thumbnail": "/images/head/1a8ff55d9ecdd03674bf4bf38fe90a7cb8200fb1.png"
+                    },
+                    "player_rank": 28,
+                    "nickname": "Virepri",
+                    "head_skills": {
+                      "main": {
+                        "name": "Swim Speed Up",
+                        "id": "4",
+                        "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png"
+                      },
+                      "subs": [
+                        {
+                          "id": "13",
+                          "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
+                          "name": "Cold-Blooded"
+                        },
+                        {
+                          "id": "7",
+                          "image": "/images/skill/f20a3e85feeb6b4bb021d28059afd6265cee0b43.png",
+                          "name": "Special Power Up"
+                        },
+                        {
+                          "name": "Run Speed Up",
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                          "id": "3"
+                        }
+                      ]
+                    },
+                    "principal_id": "5c469bb0e0f1a893",
+                    "shoes_skills": {
+                      "main": {
+                        "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png",
+                        "id": "11",
+                        "name": "Ink Resistance Up"
+                      },
+                      "subs": [
+                        {
+                          "name": "Run Speed Up",
+                          "id": "3",
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
+                        },
+                        {
+                          "id": "4",
+                          "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
+                          "name": "Swim Speed Up"
+                        },
+                        {
+                          "name": "Quick Respawn",
+                          "id": "8",
+                          "image": "/images/skill/84ab4ba1188849dff63a4314955a53ab103b47df.png"
+                        }
+                      ]
+                    },
+                    "shoes": {
+                      "rarity": 2,
+                      "kind": "shoes",
+                      "image": "/images/shoes/061da7c22c1d15acfc3c737383ced1d6f7ba48d8.png",
+                      "id": "6003",
+                      "name": "Blue Moto Boots",
+                      "brand": {
+                        "id": "3",
+                        "image": "/images/brand/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
+                        "name": "Rockenberg",
+                        "frequent_skill": {
+                          "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                          "id": "3",
+                          "name": "Run Speed Up"
+                        }
+                      },
+                      "thumbnail": "/images/shoes/6564c18c77f9d0dc58a100f4b187bd7612187db5.png"
+                    },
+                    "clothes_skills": {
+                      "main": {
+                        "image": "/images/skill/f0a99d1ab1a765b992b79610ebdc25b69d88fae9.png",
+                        "id": "104",
+                        "name": "Ninja Squid"
+                      },
+                      "subs": [
+                        {
+                          "name": "Ink Resistance Up",
+                          "id": "11",
+                          "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png"
+                        },
+                        null,
+                        null
+                      ]
+                    },
+                    "clothes": {
+                      "thumbnail": "/images/clothes/d23b9b4c3f866f219b2742eea8444b94ee82fcce.png",
+                      "brand": {
+                        "image": "/images/brand/4b05e494bf9a547b4d625fd52dcdd930a6c4defc.png",
+                        "id": "17",
+                        "name": "Toni Kensa",
+                        "frequent_skill": {
+                          "name": "Cold-Blooded",
+                          "id": "13",
+                          "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png"
+                        }
+                      },
+                      "name": "Pullover Coat",
+                      "image": "/images/clothes/a66bdd68e295196d761343063eca140529086aef.png",
+                      "id": "5022",
+                      "kind": "clothes",
+                      "rarity": 2
+                    },
+                    "weapon": {
+                      "id": "1110",
+                      "image": "/images/weapon/f1d5740dfb7d87f7e43974bbe5585445368741b8.png",
+                      "special": {
+                        "image_b": "/images/special/26e8117808ce17dadb0f23943359e5909fef4085.png",
+                        "image_a": "/images/special/9871c82952ed0141be0310ace1942c9f5f66d655.png",
+                        "id": "8",
+                        "name": "Inkjet"
+                      },
+                      "sub": {
+                        "name": "Autobomb",
+                        "id": "4",
+                        "image_a": "/images/sub/457de86fa079df54c7a3c96decca49a55a1686ae.png",
+                        "image_b": "/images/sub/f0e4b4bad0e37031b8cb8ff397d4bb0ad9c86307.png"
+                      },
+                      "thumbnail": "/images/weapon/5f565ede7ae220d5b1d453b3ef55b8d20d7b9a2a.png",
+                      "name": "Octobrush"
+                    },
+                    "star_rank": 0,
+                    "udemae": {
+                      "s_plus_number": null,
+                      "number": 5,
+                      "name": "B+"
+                    }
+                  },
+                  "special_count": 1
+                },
+                "start_time": 1507348518,
+                "battle_number": "451"
+              }
+            ]
+          },
+          "udemae": {
+            "stat": {
+              "estimate_gachi_power": 1560,
+              "other_team_count": 0,
+              "type": "gachi",
+              "weapon_paint_point": 50916,
+              "stage": {
+                "image": "/images/stage/0907fc7dc325836a94d385919fe01dc13848612a.png",
+                "id": "7",
+                "name": "Port Mackerel"
+              },
+              "other_team_result": {
+                "name": "DEFEAT",
+                "key": "defeat"
+              },
+              "elapsed_time": 61,
+              "rule": {
+                "name": "Rainmaker",
+                "multiline_name": "Rainmaker",
+                "key": "rainmaker"
+              },
+              "my_team_result": {
+                "name": "VICTORY",
+                "key": "victory"
+              },
+              "my_team_count": 100,
+              "player_result": {
+                "assist_count": 0,
+                "game_paint_point": 149,
+                "death_count": 1,
+                "kill_count": 1,
+                "sort_score": 0,
+                "player": {
+                  "player_rank": 27,
+                  "nickname": "Virepri",
+                  "head_skills": {
+                    "main": {
+                      "name": "Swim Speed Up",
+                      "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
+                      "id": "4"
+                    },
+                    "subs": [
+                      {
+                        "name": "Cold-Blooded",
+                        "id": "13",
+                        "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png"
+                      },
+                      {
+                        "image": "/images/skill/f20a3e85feeb6b4bb021d28059afd6265cee0b43.png",
+                        "id": "7",
+                        "name": "Special Power Up"
+                      },
+                      {
+                        "name": "Run Speed Up",
+                        "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                        "id": "3"
+                      }
+                    ]
+                  },
+                  "principal_id": "5c469bb0e0f1a893",
+                  "head": {
+                    "rarity": 1,
+                    "kind": "head",
+                    "id": "25000",
+                    "image": "/images/head/7242a4b5e8b7c097e1676a2adb1b69dd89b3c292.png",
+                    "name": "Squid Hairclip",
+                    "brand": {
+                      "name": "amiibo",
+                      "image": "/images/brand/154440ecbfb65a22cdb224fac843b02cccbcad03.png",
+                      "id": "99"
+                    },
+                    "thumbnail": "/images/head/1a8ff55d9ecdd03674bf4bf38fe90a7cb8200fb1.png"
+                  },
+                  "clothes": {
+                    "thumbnail": "/images/clothes/9a824f0f9ee2524a6f259d0fd3e532667850eb1d.png",
+                    "brand": {
+                      "name": "amiibo",
+                      "image": "/images/brand/154440ecbfb65a22cdb224fac843b02cccbcad03.png",
+                      "id": "99"
+                    },
+                    "name": "School Uniform",
+                    "id": "25000",
+                    "image": "/images/clothes/be8a27e28c19fdb3c9c509ee9076516ea68e1676.png",
+                    "kind": "clothes",
+                    "rarity": 1
+                  },
+                  "clothes_skills": {
+                    "main": {
+                      "id": "2",
+                      "image": "/images/skill/c14f4471b26e0f918c736b5c17e03212290f4541.png",
+                      "name": "Ink Recovery Up"
+                    },
+                    "subs": [
+                      {
+                        "name": "Run Speed Up",
+                        "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
+                        "id": "3"
+                      },
+                      {
+                        "name": "Run Speed Up",
+                        "id": "3",
+                        "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
+                      },
+                      {
+                        "name": "Ink Saver (Sub)",
+                        "image": "/images/skill/da8ff08954fd5d890fc8bc4dd4cb761e2a33b703.png",
+                        "id": "1"
+                      }
+                    ]
+                  },
+                  "weapon": {
+                    "name": "Octobrush",
+                    "thumbnail": "/images/weapon/5f565ede7ae220d5b1d453b3ef55b8d20d7b9a2a.png",
+                    "sub": {
+                      "name": "Autobomb",
+                      "image_a": "/images/sub/457de86fa079df54c7a3c96decca49a55a1686ae.png",
+                      "id": "4",
+                      "image_b": "/images/sub/f0e4b4bad0e37031b8cb8ff397d4bb0ad9c86307.png"
+                    },
+                    "special": {
+                      "name": "Inkjet",
+                      "id": "8",
+                      "image_a": "/images/special/9871c82952ed0141be0310ace1942c9f5f66d655.png",
+                      "image_b": "/images/special/26e8117808ce17dadb0f23943359e5909fef4085.png"
+                    },
+                    "id": "1110",
+                    "image": "/images/weapon/f1d5740dfb7d87f7e43974bbe5585445368741b8.png"
+                  },
+                  "star_rank": 0,
+                  "udemae": {
+                    "s_plus_number": null,
+                    "number": 4,
+                    "name": "B"
+                  },
+                  "shoes_skills": {
+                    "subs": [
+                      {
+                        "name": "Run Speed Up",
+                        "id": "3",
+                        "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
+                      },
+                      {
+                        "name": "Swim Speed Up",
+                        "id": "4",
+                        "image": "/images/skill/d138c293c8ddac42fadf0e6531100a88c79c81f6.png"
+                      },
+                      {
+                        "id": "8",
+                        "image": "/images/skill/84ab4ba1188849dff63a4314955a53ab103b47df.png",
+                        "name": "Quick Respawn"
+                      }
+                    ],
+                    "main": {
+                      "name": "Ink Resistance Up",
+                      "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png",
+                      "id": "11"
+                    }
+                  },
+                  "shoes": {
+                    "name": "Blue Moto Boots",
+                    "brand": {
+                      "name": "Rockenberg",
+                      "frequent_skill": {
+                        "name": "Run Speed Up",
+                        "id": "3",
+                        "image": "/images/skill/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
+                      },
+                      "image": "/images/brand/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
+                      "id": "3"
+                    },
+                    "thumbnail": "/images/shoes/6564c18c77f9d0dc58a100f4b187bd7612187db5.png",
+                    "kind": "shoes",
+                    "rarity": 2,
+                    "image": "/images/shoes/061da7c22c1d15acfc3c737383ced1d6f7ba48d8.png",
+                    "id": "6003"
+                  }
+                },
+                "special_count": 0
+              },
+              "player_rank": 27,
+              "battle_number": "431",
+              "start_time": 1507277310,
+              "udemae": {
+                "s_plus_number": null,
+                "number": 5,
+                "name": "B+"
+              },
+              "star_rank": 0,
+              "game_mode": {
+                "name": "Ranked Battle",
+                "key": "gachi"
+              }
+            },
+            "change": 1,
+            "importance": 0
+          }
+        }
+		```
 
 
 ## Nickname and icon [/api/nickname_and_icon{?id}]
@@ -3854,7 +4394,8 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
             Cookie: [Cookie variable here]
 
     + Body
-
+    
+        ```json
 		{
 		  "nickname_and_icons": [
 		    {
@@ -3864,6 +4405,7 @@ Note: The results array has been truncated from 50 elements to 2 here, for brevi
 		    }
 		  ]
 		}
+		```
 
 
 # Group Festivals
@@ -20612,210 +21154,213 @@ Obtains festival rankings.
 + Response 200 (application/json)
 
 	+ Body
-		{
-		  "ordered_info": {
-		    "price": 14250,
-		    "skill": {
-		      "name": "Drop Roller",
-		      "image": "\/images\/skill\/d0de52e89947803e5b24165335855f39f9e8a6bd.png",
-		      "id": "111"
-		    },
-		    "gear": {
-		      "brand": {
-		        "image": "\/images\/brand\/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
-		        "frequent_skill": {
-		          "id": "3",
-		          "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png",
-		          "name": "Run Speed Up"
-		        },
-		        "id": "3",
-		        "name": "Rockenberg"
-		      },
-		      "image": "\/images\/shoes\/fd5c16ec985483652477eb50591b0bb350f9a3fe.png",
-		      "rarity": 2,
-		      "id": "8005",
-		      "kind": "shoes",
-		      "name": "Kid Clams",
-		      "thumbnail": "\/images\/shoes\/8b8370b2f5fca2cb13a8c585e986b1749ea7a753.png"
-		    }
-		  },
-		  "merchandises": [
-		    {
-		      "gear": {
-		        "name": "Chirpy Chips Band Tee",
-		        "thumbnail": "\/images\/clothes\/3f716dd2e0b869d1fee6dbd74445af2039b91488.png",
-		        "kind": "clothes",
-		        "rarity": 0,
-		        "id": "1042",
-		        "brand": {
-		          "id": "3",
-		          "frequent_skill": {
-		            "name": "Run Speed Up",
-		            "id": "3",
-		            "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
-		          },
-		          "image": "\/images\/brand\/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
-		          "name": "Rockenberg"
-		        },
-		        "image": "\/images\/clothes\/5bed2a99692e2320d04cb69efb3d27b1453ba427.png"
-		      },
-		      "kind": "clothes",
-		      "skill": {
-		        "image": "\/images\/skill\/33087a476135074af856151a89a6fe4d1d3a996e.png",
-		        "id": "11",
-		        "name": "Ink Resistance Up"
-		      },
-		      "price": 2250,
-		      "id": "4780952683920163045",
-		      "end_time": 1501387200
-		    },
-		    {
-		      "kind": "clothes",
-		      "gear": {
-		        "name": "Shirt & Tie",
-		        "thumbnail": "\/images\/clothes\/2cd7613563ede73573b246c03fd315072481036e.png",
-		        "kind": "clothes",
-		        "rarity": 2,
-		        "id": "8015",
-		        "brand": {
-		          "frequent_skill": {
-		            "id": "0",
-		            "image": "\/images\/skill\/04b1de71fba1f14197b9163503955c52fd74858b.png",
-		            "name": "Ink Saver (Main)"
-		          },
-		          "image": "\/images\/brand\/36bc10db0aa2640c87ad712fc0281515beedcca1.png",
-		          "id": "8",
-		          "name": "Splash Mob"
-		        },
-		        "image": "\/images\/clothes\/e394fa214515cde618e3d31204694044e01f9edc.png"
-		      },
-		      "end_time": 1501394400,
-		      "skill": {
-		        "image": "\/images\/skill\/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
-		        "id": "4",
-		        "name": "Swim Speed Up"
-		      },
-		      "price": 12600,
-		      "id": "4780952683920163046"
-		    },
-		    {
-		      "skill": {
-		        "name": "Ink Saver (Main)",
-		        "id": "0",
-		        "image": "\/images\/skill\/04b1de71fba1f14197b9163503955c52fd74858b.png"
-		      },
-		      "price": 7600,
-		      "id": "4780952683920163047",
-		      "end_time": 1501401600,
-		      "gear": {
-		        "kind": "shoes",
-		        "name": "Punk Whites",
-		        "thumbnail": "\/images\/shoes\/0585889cd0579eab915d05b769827408e4a7694b.png",
-		        "brand": {
-		          "id": "3",
-		          "image": "\/images\/brand\/451a2d0b5ceb7ea4ec4e47c3ff05eee362e9b722.png",
-		          "frequent_skill": {
-		            "name": "Run Speed Up",
-		            "id": "3",
-		            "image": "\/images\/skill\/7de1bdfd875ef470b6066c17bed726b5b5113d48.png"
-		          },
-		          "name": "Rockenberg"
-		        },
-		        "image": "\/images\/shoes\/7f725fb83d72e41297d15e70319bd7c51a5080c1.png",
-		        "id": "6006",
-		        "rarity": 1
-		      },
-		      "kind": "shoes"
-		    },
-		    {
-		      "price": 8200,
-		      "id": "4780952683920163048",
-		      "skill": {
-		        "image": "\/images\/skill\/35f4ec4284fc5a19da58ffb1a7988eb26eb8bd7f.png",
-		        "id": "12",
-		        "name": "Bomb Defense Up"
-		      },
-		      "end_time": 1501408800,
-		      "gear": {
-		        "rarity": 1,
-		        "id": "3011",
-		        "brand": {
-		          "name": "Splash Mob",
-		          "frequent_skill": {
-		            "id": "0",
-		            "image": "\/images\/skill\/04b1de71fba1f14197b9163503955c52fd74858b.png",
-		            "name": "Ink Saver (Main)"
-		          },
-		          "image": "\/images\/brand\/36bc10db0aa2640c87ad712fc0281515beedcca1.png",
-		          "id": "8"
-		        },
-		        "image": "\/images\/head\/484f496c9062fd10875451cd40d563f65d441205.png",
-		        "name": "Half-Rim Glasses",
-		        "thumbnail": "\/images\/head\/5bd6835e659e0e9d2d39ae89a9f309c33a8f32d8.png",
-		        "kind": "head"
-		      },
-		      "kind": "head"
-		    },
-		    {
-		      "end_time": 1501416000,
-		      "id": "4780952683920163830",
-		      "price": 3125,
-		      "skill": {
-		        "name": "Respawn Punisher",
-		        "image": "\/images\/skill\/344e4c16ad4ec9ab8f56711d8d79a1ffb9228a1a.png",
-		        "id": "107"
-		      },
-		      "kind": "clothes",
-		      "gear": {
-		        "kind": "clothes",
-		        "thumbnail": "\/images\/clothes\/d4d96e9a1305901f918b16147e60170aca01e55f.png",
-		        "name": "Inkopolis Squaps Jersey",
-		        "image": "\/images\/clothes\/cfb16fc9bfc2d1527c3327b69c698c1f6d0f5c20.png",
-		        "brand": {
-		          "id": "1",
-		          "frequent_skill": {
-		            "name": "Quick Super Jump",
-		            "id": "9",
-		            "image": "\/images\/skill\/daf6883039afa62da91eb93eb2a40b673f10b715.png"
-		          },
-		          "image": "\/images\/brand\/3d4661b3f60f4b74e9bb6760ba7397ecd2502a20.png",
-		          "name": "Zink"
-		        },
-		        "id": "2014",
-		        "rarity": 0
-		      }
-		    },
-		    {
-		      "end_time": 1501423200,
-		      "price": 12600,
-		      "id": "4780952683920163831",
-		      "skill": {
-		        "name": "Ink Saver (Sub)",
-		        "id": "1",
-		        "image": "\/images\/skill\/da8ff08954fd5d890fc8bc4dd4cb761e2a33b703.png"
-		      },
-		      "kind": "clothes",
-		      "gear": {
-		        "id": "8015",
-		        "rarity": 2,
-		        "image": "\/images\/clothes\/e394fa214515cde618e3d31204694044e01f9edc.png",
-		        "brand": {
-		          "name": "Splash Mob",
-		          "id": "8",
-		          "image": "\/images\/brand\/36bc10db0aa2640c87ad712fc0281515beedcca1.png",
-		          "frequent_skill": {
-		            "name": "Ink Saver (Main)",
-		            "id": "0",
-		            "image": "\/images\/skill\/04b1de71fba1f14197b9163503955c52fd74858b.png"
-		          }
-		        },
-		        "thumbnail": "\/images\/clothes\/2cd7613563ede73573b246c03fd315072481036e.png",
-		        "name": "Shirt & Tie",
-		        "kind": "clothes"
-		      }
-		    }
-		  ]
-		}
+	
+	    ```json
+	    {
+          "ordered_info": {
+            "skill": {
+              "image": "/images/skill/c14f4471b26e0f918c736b5c17e03212290f4541.png",
+              "name": "Ink Recovery Up",
+              "id": "2"
+            },
+            "price": 5800,
+            "gear": {
+              "id": "10004",
+              "name": "Shirt with Blue Hoodie",
+              "kind": "clothes",
+              "brand": {
+                "name": "Splash Mob",
+                "id": "8",
+                "frequent_skill": {
+                  "image": "/images/skill/04b1de71fba1f14197b9163503955c52fd74858b.png",
+                  "name": "Ink Saver (Main)",
+                  "id": "0"
+                },
+                "image": "/images/brand/36bc10db0aa2640c87ad712fc0281515beedcca1.png"
+              },
+              "rarity": 1,
+              "image": "/images/clothes/93e5accce772fc01017dcfdd9019d69f53acae4a.png",
+              "thumbnail": "/images/clothes/021fa31425bcac666c225fd61000bd5eb8970efb.png"
+            }
+          },
+          "merchandises": [
+            {
+              "end_time": 1507363200,
+              "price": 5800,
+              "gear": {
+                "name": "Shirt with Blue Hoodie",
+                "kind": "clothes",
+                "id": "10004",
+                "brand": {
+                  "frequent_skill": {
+                    "id": "0",
+                    "name": "Ink Saver (Main)",
+                    "image": "/images/skill/04b1de71fba1f14197b9163503955c52fd74858b.png"
+                  },
+                  "image": "/images/brand/36bc10db0aa2640c87ad712fc0281515beedcca1.png",
+                  "name": "Splash Mob",
+                  "id": "8"
+                },
+                "rarity": 1,
+                "thumbnail": "/images/clothes/021fa31425bcac666c225fd61000bd5eb8970efb.png",
+                "image": "/images/clothes/93e5accce772fc01017dcfdd9019d69f53acae4a.png"
+              },
+              "skill": {
+                "image": "/images/skill/c14f4471b26e0f918c736b5c17e03212290f4541.png",
+                "id": "2",
+                "name": "Ink Recovery Up"
+              },
+              "kind": "clothes",
+              "id": "4780952683920475208"
+            },
+            {
+              "skill": {
+                "id": "107",
+                "name": "Respawn Punisher",
+                "image": "/images/skill/344e4c16ad4ec9ab8f56711d8d79a1ffb9228a1a.png"
+              },
+              "id": "4780952683920475209",
+              "kind": "clothes",
+              "price": 16200,
+              "end_time": 1507370400,
+              "gear": {
+                "id": "7009",
+                "kind": "clothes",
+                "name": "Positive Longcuff Sweater",
+                "brand": {
+                  "name": "Toni Kensa",
+                  "id": "17",
+                  "frequent_skill": {
+                    "image": "/images/skill/efa003501e1152ef7b617b9e01517c915e05b7ac.png",
+                    "name": "Cold-Blooded",
+                    "id": "13"
+                  },
+                  "image": "/images/brand/4b05e494bf9a547b4d625fd52dcdd930a6c4defc.png"
+                },
+                "rarity": 2,
+                "image": "/images/clothes/a959e47c1fcd480d4cbce847c744e6ad24add332.png",
+                "thumbnail": "/images/clothes/4bf5e03f4fa7b3298f377268ecf4f02caa1912ce.png"
+              }
+            },
+            {
+              "gear": {
+                "rarity": 1,
+                "brand": {
+                  "name": "Splash Mob",
+                  "id": "8",
+                  "image": "/images/brand/36bc10db0aa2640c87ad712fc0281515beedcca1.png",
+                  "frequent_skill": {
+                    "id": "0",
+                    "name": "Ink Saver (Main)",
+                    "image": "/images/skill/04b1de71fba1f14197b9163503955c52fd74858b.png"
+                  }
+                },
+                "name": "Mawcasins",
+                "kind": "shoes",
+                "id": "2009",
+                "thumbnail": "/images/shoes/c044d825430c0d2f8507c7e535245a1c0c355348.png",
+                "image": "/images/shoes/d636d58b46687230999bf650cc78785772123875.png"
+              },
+              "end_time": 1507377600,
+              "price": 4800,
+              "kind": "shoes",
+              "id": "4780952683920489304",
+              "skill": {
+                "image": "/images/skill/f20a3e85feeb6b4bb021d28059afd6265cee0b43.png",
+                "id": "7",
+                "name": "Special Power Up"
+              }
+            },
+            {
+              "skill": {
+                "image": "/images/skill/daf6883039afa62da91eb93eb2a40b673f10b715.png",
+                "name": "Quick Super Jump",
+                "id": "9"
+              },
+              "kind": "head",
+              "id": "4780952683920489305",
+              "end_time": 1507384800,
+              "price": 1000,
+              "gear": {
+                "brand": {
+                  "image": "/images/brand/eab05d2d502cf953b4ae034c87e52e8c999339d6.png",
+                  "frequent_skill": {
+                    "image": "/images/skill/1378f3963526d7216ec44da35b924b81a8ff6a37.png",
+                    "id": "5",
+                    "name": "Special Charge Up"
+                  },
+                  "name": "Takoroka",
+                  "id": "11"
+                },
+                "rarity": 0,
+                "name": "Takoroka Mesh",
+                "kind": "head",
+                "id": "1002",
+                "thumbnail": "/images/head/a3d113727dea330b6c79583eb8ef1ba3bdc76861.png",
+                "image": "/images/head/df30e8a5b95abbaea6fe4479f1f451b22f61699f.png"
+              }
+            },
+            {
+              "gear": {
+                "rarity": 2,
+                "brand": {
+                  "name": "Splash Mob",
+                  "id": "8",
+                  "frequent_skill": {
+                    "image": "/images/skill/04b1de71fba1f14197b9163503955c52fd74858b.png",
+                    "id": "0",
+                    "name": "Ink Saver (Main)"
+                  },
+                  "image": "/images/brand/36bc10db0aa2640c87ad712fc0281515beedcca1.png"
+                },
+                "name": "Strapping Whites",
+                "kind": "shoes",
+                "id": "1008",
+                "image": "/images/shoes/796a5382352971802f46c00061386d837a1e378c.png",
+                "thumbnail": "/images/shoes/43e4a0445b2c8f644f9da9d3fbf6f0ed68b19b43.png"
+              },
+              "end_time": 1507392000,
+              "price": 13050,
+              "id": "4780952683920489306",
+              "kind": "shoes",
+              "skill": {
+                "image": "/images/skill/33087a476135074af856151a89a6fe4d1d3a996e.png",
+                "id": "11",
+                "name": "Ink Resistance Up"
+              }
+            },
+            {
+              "gear": {
+                "image": "/images/clothes/2bd734538c31d28b3909817332335cddcd2fbc12.png",
+                "thumbnail": "/images/clothes/2e7c113ab4b44093c481c735f219e55d2d0a073d.png",
+                "brand": {
+                  "name": "Zekko",
+                  "id": "4",
+                  "image": "/images/brand/f3d01187fd633e7d48d9e4e16ef31da73279293c.png",
+                  "frequent_skill": {
+                    "image": "/images/skill/d83b962b84fcea9d02c591c296234f5de77f9682.png",
+                    "id": "6",
+                    "name": "Special Saver"
+                  }
+                },
+                "rarity": 1,
+                "name": "Zekko Jade Coat",
+                "kind": "clothes",
+                "id": "5028"
+              },
+              "end_time": 1507399200,
+              "price": 7200,
+              "kind": "clothes",
+              "id": "4780952683920489307",
+              "skill": {
+                "id": "5",
+                "name": "Special Charge Up",
+                "image": "/images/skill/1378f3963526d7216ec44da35b924b81a8ff6a37.png"
+              }
+            }
+          ]
+        }
+	    ```
 
 ## Individual Merchandise [/api/onlineshop/order/{item_id}]
 
@@ -20847,42 +21392,46 @@ Obtains festival rankings.
 + Response 200 (application/json)
 
 	+ Body
-
+        
+        ```json
 		{
-		  "ordered_info": {
-		    "gear": {
-		      "kind": "clothes",
-		      "name": "Shirt & Tie",
-		      "brand": {
-		        "name": "Splash Mob",
-		        "frequent_skill": {
-		          "id": "0",
-		          "image": "\/images\/skill\/04b1de71fba1f14197b9163503955c52fd74858b.png",
-		          "name": "Ink Saver (Main)"
-		        },
-		        "id": "8",
-		        "image": "\/images\/brand\/36bc10db0aa2640c87ad712fc0281515beedcca1.png"
-		      },
-		      "rarity": 2,
-		      "thumbnail": "\/images\/clothes\/2cd7613563ede73573b246c03fd315072481036e.png",
-		      "id": "8015",
-		      "image": "\/images\/clothes\/e394fa214515cde618e3d31204694044e01f9edc.png"
-		    },
-		    "price": 12600,
-		    "skill": {
-		      "name": "Swim Speed Up",
-		      "image": "\/images\/skill\/d138c293c8ddac42fadf0e6531100a88c79c81f6.png",
-		      "id": "4"
-		    }
-		  }
-		}
+          "ordered_info": {
+            "skill": {
+              "image": "/images/skill/f20a3e85feeb6b4bb021d28059afd6265cee0b43.png",
+              "id": "7",
+              "name": "Special Power Up"
+            },
+            "gear": {
+              "kind": "shoes",
+              "brand": {
+                "frequent_skill": {
+                  "name": "Ink Saver (Main)",
+                  "image": "/images/skill/04b1de71fba1f14197b9163503955c52fd74858b.png",
+                  "id": "0"
+                },
+                "name": "Splash Mob",
+                "id": "8",
+                "image": "/images/brand/36bc10db0aa2640c87ad712fc0281515beedcca1.png"
+              },
+              "thumbnail": "/images/shoes/c044d825430c0d2f8507c7e535245a1c0c355348.png",
+              "rarity": 1,
+              "id": "2009",
+              "image": "/images/shoes/d636d58b46687230999bf650cc78785772123875.png",
+              "name": "Mawcasins"
+            },
+            "price": 4800
+          }
+        }
+		```
 
 
 + Response 400 (application/json)
 
 	+ Body
-
+        
+        ```json
 		{
 		  "message": null,
 		  "code": "ONLINE_SHOP_ALREADY_ORDERED"
 		}
+		```
