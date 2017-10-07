@@ -48,7 +48,7 @@ HOST: https://api-lp1.znc.srv.nintendo.net
 
 ## Game List [/v1/Game/ListWebServices]
 
-### <a name="GetGameList"></a> Get game list [GET]
+### <a name="GetGameList"></a> Get game list [POST]
 
 Web API Access Token should be webApiServerCredential["accesstoken"] from [POST /v1/Account/Login](#LoginAccount).
 
