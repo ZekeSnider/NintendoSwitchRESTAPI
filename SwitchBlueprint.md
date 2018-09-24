@@ -5,9 +5,9 @@ HOST: https://api-lp1.znc.srv.nintendo.net
 
 ## Account Login [/v1/Account/Login]
 
-This is currenly **[Broken.](https://twitter.com/mattisenhower/status/908460571191795713)**
+It is currently not possible to generate the `f` parameter for this endpoint without using the Nintendo Switch app. For more details, see `f` details below.
 
-If you wish to use this API, extract the needed response from your phone using something like [Telerik Fiddler.](http://www.telerik.com/fiddler)
+If you wish to use this API, extract the needed response from your phone using something like [Telerik Fiddler](http://www.telerik.com/fiddler) or [mitmproxy](https://mitmproxy.org).
 
 Or, if you wish to use exclusively the [_Splatoon 2 API_](Splatoon2Blueprint.md), extract your iksm_session from a response while on the game specific integration.
 
