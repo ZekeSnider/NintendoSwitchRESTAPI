@@ -89,81 +89,82 @@ Bearer token is `access_token` from the response of [GET /connect/1.0.0/api/toke
 + Response 200 (application/json)
 	
 	+ Body
-
-		{
-		  "region": null,
-		  "isChild": false,
-		  "timezone": {
-		    "name": "America/Los_Angeles",
-		    "utcOffsetSeconds": -25200,
-		    "id": "America/Los_Angeles",
-		    "utcOffset": "-07:00"
-		  },
-		  "mii": {
-		    "clientId": "clientidhere",
-		    "storeData": {
-		      "3": "storedatahere"
-		    },
-		    "id": "mii_idhere",
-		    "imageUriTemplate": "https://{imageOrigin}/1.0.0/miis{/id}/image{/etag}.{format}{?type,expression,width,bgColor,clothesColor,cameraXRotate,cameraYRotate,cameraZRotate,characterXRotate,characterYRotate,characterZRotate,lightXDirection,lightYDirection,lightZDirection,lightDirectionMode,splitDepthOffset,splitMode,instanceCount,instanceRotationMode}",
-		    "imageOrigin": "cdn-mii.accounts.nintendo.com",
-		    "etag": "etaghere",
-		    "updatedAt": 1455678671,
-		    "favoriteColor": "green",
-		    "type": "profile"
-		  },
-		  "clientFriendsOptedIn": true,
-		  "emailVerified": true,
-		  "updatedAt": 1488606410,
-		  "screenName": "censoredemailhere / censoredusernamehere",
-		  "emailOptedInUpdatedAt": 1455678552,
-		  "emailOptedIn": true,
-		  "clientFriendsOptedInUpdatedAt": 0,
-		  "nickname": "Zeke",
-		  "eachEmailOptedIn": {
-		    "survey": {
-		      "updatedAt": 1494449469,
-		      "optedIn": true
-		    },
-		    "deals": {
-		      "optedIn": true,
-		      "updatedAt": 1494449469
-		    }
-		  },
-		  "analyticsOptedInUpdatedAt": 1455678552,
-		  "country": "US",
-		  "gender": "male",
-		  "birthday": "yyyy-mm-dd",
-		  "id": "idhere",
-		  "candidateMiis": [
-		    {
-		      "updatedAt": 1455678671,
-		      "favoriteColor": "green",
-		      "type": "candidate",
-		      "clientId": "clientidhere",
-		      "storeData": {
-		        "3": "storedatahere"
-		      },
-		      "id": "idhere",
-		      "imageUriTemplate": "https://{imageOrigin}/1.0.0/miis{/id}/image{/etag}.{format}{?type,expression,width,bgColor,clothesColor,cameraXRotate,cameraYRotate,cameraZRotate,characterXRotate,characterYRotate,characterZRotate,lightXDirection,lightYDirection,lightZDirection,lightDirectionMode,splitDepthOffset,splitMode,instanceCount,instanceRotationMode}",
-		      "imageOrigin": "cdn-mii.accounts.nintendo.com",
-		      "etag": "etaghere"
-		    },
-		    {
-		      "type": "candidate",
-		      "favoriteColor": "yellowgreen",
-		      "updatedAt": 1492719363,
-		      "etag": "etaghere",
-		      "imageOrigin": "cdn-mii.accounts.nintendo.com",
-		      "imageUriTemplate": "https://{imageOrigin}/1.0.0/miis{/id}/image{/etag}.{format}{?type,expression,width,bgColor,clothesColor,cameraXRotate,cameraYRotate,cameraZRotate,characterXRotate,characterYRotate,characterZRotate,lightXDirection,lightYDirection,lightZDirection,lightDirectionMode,splitDepthOffset,splitMode,instanceCount,instanceRotationMode}",
-		      "id": "idhere",
-		      "storeData": {
-		        "3": "storedatahere"
-		      },
-		      "clientId": "clientidhere"
-		    }
-		  ],
-		  "createdAt": 1455678552,
-		  "analyticsOptedIn": true,
-		  "language": "en-US"
-		}
+```json
+{
+  "region": null,
+  "isChild": false,
+  "timezone": {
+    "name": "America/Los_Angeles",
+    "utcOffsetSeconds": -25200,
+    "id": "America/Los_Angeles",
+    "utcOffset": "-07:00"
+  },
+  "mii": {
+   "clientId": "clientidhere",
+    "storeData": {
+      "3": "storedatahere"
+    },
+    "id": "mii_idhere",
+    "imageUriTemplate": "https://{imageOrigin}/1.0.0/miis{/id}/image{/etag}.{format}{?type,expression,width,bgColor,clothesColor,cameraXRotate,cameraYRotate,cameraZRotate,characterXRotate,characterYRotate,characterZRotate,lightXDirection,lightYDirection,lightZDirection,lightDirectionMode,splitDepthOffset,splitMode,instanceCount,instanceRotationMode}",
+    "imageOrigin": "cdn-mii.accounts.nintendo.com",
+    "etag": "etaghere",
+    "updatedAt": 1455678671,
+    "favoriteColor": "green",
+    "type": "profile"
+  },
+  "clientFriendsOptedIn": true,
+  "emailVerified": true,
+  "updatedAt": 1488606410,
+  "screenName": "censoredemailhere / censoredusernamehere",
+  "emailOptedInUpdatedAt": 1455678552,
+  "emailOptedIn": true,
+  "clientFriendsOptedInUpdatedAt": 0,
+  "nickname": "Zeke",
+  "eachEmailOptedIn": {
+    "survey": {
+      "updatedAt": 1494449469,
+      "optedIn": true
+    },
+    "deals": {
+      "optedIn": true,
+      "updatedAt": 1494449469
+    }
+  },
+  "analyticsOptedInUpdatedAt": 1455678552,
+  "country": "US",
+  "gender": "male",
+  "birthday": "yyyy-mm-dd",
+  "id": "idhere",
+  "candidateMiis": [
+    {
+      "updatedAt": 1455678671,
+      "favoriteColor": "green",
+      "type": "candidate",
+      "clientId": "clientidhere",
+      "storeData": {
+	"3": "storedatahere"
+      },
+      "id": "idhere",
+      "imageUriTemplate": "https://{imageOrigin}/1.0.0/miis{/id}/image{/etag}.{format}{?type,expression,width,bgColor,clothesColor,cameraXRotate,cameraYRotate,cameraZRotate,characterXRotate,characterYRotate,characterZRotate,lightXDirection,lightYDirection,lightZDirection,lightDirectionMode,splitDepthOffset,splitMode,instanceCount,instanceRotationMode}",
+      "imageOrigin": "cdn-mii.accounts.nintendo.com",
+      "etag": "etaghere"
+    },
+    {
+      "type": "candidate",
+      "favoriteColor": "yellowgreen",
+      "updatedAt": 1492719363,
+      "etag": "etaghere",
+      "imageOrigin": "cdn-mii.accounts.nintendo.com",
+      "imageUriTemplate": "https://{imageOrigin}/1.0.0/miis{/id}/image{/etag}.{format}{?type,expression,width,bgColor,clothesColor,cameraXRotate,cameraYRotate,cameraZRotate,characterXRotate,characterYRotate,characterZRotate,lightXDirection,lightYDirection,lightZDirection,lightDirectionMode,splitDepthOffset,splitMode,instanceCount,instanceRotationMode}",
+      "id": "idhere",
+      "storeData": {
+	"3": "storedatahere"
+      },
+      "clientId": "clientidhere"
+    }
+  ],
+  "createdAt": 1455678552,
+  "analyticsOptedIn": true,
+  "language": "en-US"
+}
+```
